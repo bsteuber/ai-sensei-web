@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>FirebaseUI Auth Demo</title>
-    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <title>AI Sensei Login</title>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
     <script>
       // Initialize Firebase
       var config = {
@@ -15,8 +16,10 @@
       };
       firebase.initializeApp(config);
     </script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+    <link type="text/css" rel="stylesheet"
+          href="https://www.gstatic.com/firebasejs/ui/3.1.0/firebase-ui-auth.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/ui/3.1.0/firebase-ui-auth__en.js"></script>
     <style>
       body {
         margin: 0;
@@ -29,7 +32,7 @@
         // Url to redirect to after a successful sign-in.
         'signInSuccessUrl': '/',
         'callbacks': {
-          'signInSuccess': function(user, credential, redirectUrl) {
+          'signInSuccessWithAuthResult': function(user, credential, redirectUrl) {
             if (window.opener) {
               // The widget has been opened in a popup, so close the window
               // and return false to not redirect the opener.
@@ -43,7 +46,7 @@
         },
         'signInOptions': [
           firebase.auth.EmailAuthProvider.PROVIDER_ID,
-          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+          //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
           firebase.auth.GoogleAuthProvider.PROVIDER_ID
         ],
         // Terms of service url.

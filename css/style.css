@@ -294,6 +294,31 @@ header hr {
   cursor: pointer;
 }
 
+.move-navigation {
+  min-height: 7em;
+}
+
+.navigate-first-move, .navigate-last-move {
+  font-size: 16px;
+}
+
+.navigate-previous-mistake, .navigate-next-mistake {
+  font-size: 14px;
+}
+
+.navigate-previous-move, .navigate-next-move {
+  font-size: 22px;
+}
+
+.navigate-replay-var {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.navigate-leela-var, .navigate-replay-var, .navigate-back-to-game {
+  font-size: 14px;
+}
+
 .node-info {
   min-height: 6em;
 }
@@ -301,10 +326,7 @@ header hr {
 .worst-moves {
   max-height: 450px;
   overflow-y: auto;
-}
-
-.mistake-info-row {
-  width: 100%;
+  overflow-x: hidden;
 }
 
 .worst-moves .mistake-info-row:hover {

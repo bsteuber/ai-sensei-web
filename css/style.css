@@ -65,7 +65,7 @@ a:focus {
   margin-top: 2em;
 }
 
-.credits-badge {
+.credits-badge, .player-name {
   border: 1px solid #bbbbbb;
   background-color: white;
   color: black;

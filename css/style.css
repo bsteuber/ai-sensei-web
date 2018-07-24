@@ -8,6 +8,12 @@ html {
   margin-bottom: -60px;
 }
 
+.main-content {
+  background-image: url("/img/background.png");
+  margin-top: -24px;
+  margin-bottom: -60px;
+}
+
 #header .login-bar-wrapper {
   background-color: #bdd9ff;
   padding: 0.2em;
@@ -103,6 +109,12 @@ a:focus {
 
 .sgf-link:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-content a {
+  color: #002f90;
+  font-weight: bold;
   cursor: pointer;
 }
 

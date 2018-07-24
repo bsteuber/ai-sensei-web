@@ -294,6 +294,10 @@ header hr {
   cursor: pointer;
 }
 
+.table-hover tr.game-row-disabled {
+  cursor: wait;
+}
+
 .move-navigation {
   min-height: 7em;
 }
@@ -327,6 +331,11 @@ header hr {
   max-height: 450px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+.worst-moves .mistake-info-row {
+    padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 .worst-moves .mistake-info-row:hover {

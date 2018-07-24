@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 .main-content {
   background-image: url("/img/background.png");
   margin-top: -24px;
@@ -18,7 +22,7 @@ a:focus {
 }
 
 #header .nav-bar-wrapper {
-  background-color: #ecf4ff;
+  background-color: #397bd1;
   padding: 0em
 }
 
@@ -59,12 +63,18 @@ a:focus {
   font-weight: bold;
 }
 
-.nav-link:hover {
-  cursor: pointer;
+.nav-bar-wrapper .nav-link {
+  color: #ddd;
+}
+
+.nav-bar-wrapper .nav-link:hover,
+.nav-bar-wrapper .nav-link.active {
+  color: #bbb;
 }
 
 .nav-link:hover, .nav-link.active {
   color: black;
+  cursor: pointer;
 }
 
 .content-wrapper {

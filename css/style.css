@@ -384,6 +384,10 @@ header hr {
   background-color: #bdd9ff;
 }
 
+.select-variation {
+    cursor: pointer;
+}
+
 .flash-button{
   animation-name: flash;
   animation-duration: 1s;

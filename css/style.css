@@ -326,10 +326,6 @@ header hr {
   cursor: wait;
 }
 
-.move-navigation {
-  min-height: 7em;
-}
-
 .navigate-first-move, .navigate-last-move {
   font-size: 16px;
 }
@@ -338,7 +334,7 @@ header hr {
   font-size: 14px;
 }
 
-.navigate-previous-move, .navigate-next-move {
+.navigate-previous-move, .navigate-next-move, .variation-next-move, .variation-previous-move {
   font-size: 22px;
 }
 

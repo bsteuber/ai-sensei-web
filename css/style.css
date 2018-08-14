@@ -119,8 +119,12 @@ a:focus {
   cursor: pointer;
 }
 
+#board-wrapper {
+  overflow-y: auto;
+}
+
 #board {
-    overflow: overlay;
+  overflow: overlay;
 }
 .uploads>table>tbody>tr>td {
   vertical-align: middle;

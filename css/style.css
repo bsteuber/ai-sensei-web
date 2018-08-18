@@ -43,10 +43,6 @@ a:focus {
   margin-left: 1em;
   width: 60px;
   height: 60px;
-  background-image: url("/img/logo64.png");
-}
-
-#header .logo.active, #header .logo:hover {
   background-image: url("/img/logo64yellow.png");
 }
 

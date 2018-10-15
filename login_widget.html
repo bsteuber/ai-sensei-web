@@ -46,11 +46,12 @@
         },
         'signInOptions': [
           firebase.auth.EmailAuthProvider.PROVIDER_ID,
-          //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.FacebookAuthProvider.PROVIDER_ID
         ],
         // Terms of service url.
-        'tosUrl': '/terms_of_service.html'
+        'tosUrl': '/page/about',
+        'privacyPolicyUrl': '/page/privacy'
       };
 
       // Initialize the FirebaseUI Widget using Firebase.

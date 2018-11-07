@@ -73,7 +73,11 @@ a:focus {
 }
 
 .modal,
-.card {
+.card,
+#content .card h1,
+#content .card h2,
+#content .card h3,
+#content .card h4 {
   color: black;
 }
 

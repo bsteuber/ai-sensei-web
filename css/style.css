@@ -16,14 +16,14 @@ body {
 
 #content {
   padding-top: 15px;
-  padding-bottom: 5em;   /* padding + height of the footer */
+  padding-bottom: 7em;   /* padding + height of the footer */
 }
 
 #game {
   margin-top: -15px;
 }
 
-#footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -31,6 +31,10 @@ body {
   background-color: #000c30;
   opacity: 0.7;
   padding: 1em;
+}
+
+.footer-mobile {
+  height: 5em;   /* Height of the footer */
 }
 
 html {
@@ -62,7 +66,7 @@ a:focus {
 #content h3,
 #content h4,
 #game,
-#footer .btn-link,
+.footer .btn-link,
 .games-page
 {
   color: white;
@@ -252,11 +256,11 @@ input.form-control-file {
 }
 
 
-#footer a, #footer div {
+.footer a, .footer div {
   color: #ffffff;
 }
 
-#footer a:hover {
+.footer a:hover {
   color: #dddddd;
 }
 

@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'd-din';
+  src:  url('fonts/D-DIN.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'd-din';
+  src:  url('fonts/D-DIN-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+}
+
 html,
 body {
   margin: 0;
@@ -11,7 +28,16 @@ body {
 }
 
 #header {
-  padding: 0;
+    padding: 0;
+    font-family: d-din;
+}
+
+#header .nav-button {
+    font-size: 1.2em;
+}
+
+#header .user-name {
+    font-size: 1.1em;
 }
 
 #content {
@@ -28,8 +54,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 3em;   /* Height of the footer */
-  background-color: #000c30;
-  opacity: 0.7;
+  background-color: rgba(0, 12, 48, 0.7) ;
   padding: 1em;
 }
 
@@ -43,7 +68,7 @@ html {
 
 body, #game.fullscreen {
   margin-top: 0;
-  background: url("/img/background.png") no-repeat center center fixed;
+  background: url("/img/background.png") no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -72,6 +97,10 @@ a:focus {
   color: white;
 }
 
+#game .btn-link {
+    text-decoration: none;
+}
+
 .modal {
   text-transform: none;
 }
@@ -85,6 +114,10 @@ a:focus {
   color: black;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 a, .btn-link {
   font-weight: bold;
   cursor: pointer;
@@ -94,7 +127,8 @@ a, .btn-link {
 .card a,
 .modal .btn-link,
 #header .modal .btn-link,
-.card .btn-link {
+.card .btn-link,
+.link {
   color: #002f90;
 }
 
@@ -112,35 +146,45 @@ a, .btn-link {
   text-decoration: none;
 }
 
-#header .nav-bar-wrapper .nav-link {
+#header .nav-button {
   color: #eee;
   font-weight: bold;
 }
 
-#header .nav-link:hover,
-#header .nav-link.active {
+#header .nav-button:hover,
+#header .nav-button.active {
   color: #bbb;
   cursor: pointer;
 }
 
-.login-bar .user-icon {
-  font-size: 16px;
+.login-bar .icon-log_in {
   color: #22abe4;
 }
 
-.login-bar .sign-out-button {
-  font-size: 16px;
+.login-bar .icon-log_out {
   color: #56a3d4;
 }
 
-.login-bar .upload-button {
-  font-size: 16px;
+.login-bar .icon-upload {
   color: #68b5e2;
 }
 
-.login-bar .game-list-button {
-  font-size: 16px;
+.login-bar .icon-reviews{
   color: #f7b556;
+}
+
+.credits {
+    color: #d6c939;
+}
+
+.price-credits {
+    color: #f0e13e;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.buy-credits {
+    color: #f0e13e;
+    text-shadow: 1px 1px 1px #444;
 }
 
 .game-header {
@@ -148,27 +192,19 @@ a, .btn-link {
 }
 
 .download-review-button {
-  font-size: 16px;
   color: #68b5e2;
 }
 
 .delete-review-button {
-  font-size: 16px;
   color: #be1632;
 }
 
 .fullscreen-button {
-  font-size: 16px;
   color: #22abe4;
 }
 
 #content .card {
-  background-color: #b9c8e7;
-  opacity: 0.9;
-}
-
-.credits {
-  color: #d6c939;
+  background-color: rgba(185,200,231,0.9);
 }
 
 #buy-credits-dialog {
@@ -198,12 +234,12 @@ a, .btn-link {
 
 .analysis-tag {
   display: inline-block;
-  width: 5em;
+  width: 4em;
 }
 
 .playouts-tag {
   display: inline-block;
-  width: 8em;
+  width: 9em;
 }
 
 label.moves-tag {
@@ -261,7 +297,8 @@ input.form-control-file {
 }
 
 .footer a:hover {
-  color: #dddddd;
+    color: #dddddd;
+    text-decoration: none;
 }
 
 header {
@@ -280,56 +317,6 @@ header h1 {
 
 header hr {
   margin-top: 0rem;
-}
-
-.pay-credits-amount {
-  display: inline-block;
-  width: 5em;
-  margin-right: 0.5em;
-}
-
-.pay-credits-price {
-  display: inline-block;
-  width: 2em;
-}
-
-.flash-button{
-  animation-name: flash;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-
-  //Firefox 1+
-  -webkit-animation-name: flash;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-
-  //Safari 3-4
-  -moz-animation-name: flash;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-}
-
-@keyframes flash {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.7; }
-  100% { opacity: 1.0; }
-}
-
-//Firefox 1+
-@-webkit-keyframes flash {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1.0; }
-}
-
-//Safari 3-4
-@-moz-keyframes flash {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1.0; }
 }
 
 header {
@@ -362,9 +349,15 @@ header hr {
     cursor: not-allowed !important;
 }
 
+.payment-option {
+    display: inline-block;
+    height: 2em;
+}
+
 .pay-credits-amount {
   display: inline-block;
-  width: 5em;
+  width: 5.5em;
+  height: 2em;
   margin-right: 0.5em;
 }
 
@@ -381,30 +374,20 @@ header hr {
   cursor: wait;
 }
 
-.navigate-first-move, .navigate-last-move {
-  font-size: 16px;
+.icon-page_back {
+    font-size: 2.1em !important;
+}
+
+.icon-white_black, .icon-black_white {
+    font-size: 3em !important;
+}
+
+.icon-to_end_of_game, .icon-rewind_to_start {
+  font-size: 2.4em !important;
 }
 
 .navigate-previous-mistake, .navigate-next-mistake {
-  font-size: 14px;
   color: #dc3545 !important;
-}
-
-.navigate-previous-move, .navigate-next-move, .variation-next-move, .variation-previous-move {
-  font-size: 22px;
-}
-
-.navigate-replay-var {
-  margin-top: 8px;
-  margin-bottom: 4px;
-}
-
-.navigate-leela-var, .navigate-replay-var, .navigate-back-to-game {
-  font-size: 14px;
-}
-
-.node-info {
-  min-height: 6em;
 }
 
 .worst-moves {
@@ -432,50 +415,48 @@ header hr {
 }
 
 .mistake-threshold-slider, .mistake-threshold-slider:focus {
-  background-color: inherit;
+  background-color: inherit !important;
   border: none;
   box-shadow: none;
+}
+
+.option-flex {
+    height: 34px;
+}
+
+[class^="icon-"], .user-icon, .fullscreen-button {
+    font-size: xx-large;
 }
 
 .select-variation {
     cursor: pointer;
 }
 
-.flash-button{
-  animation-name: flash;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-
-  //Firefox 1+
-  -webkit-animation-name: flash;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-
-  //Safari 3-4
-  -moz-animation-name: flash;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
+.font-xx-small {
+    font-size: 0px !important;
 }
 
-@keyframes flash {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.7; }
-  100% { opacity: 1.0; }
+.font-large {
+    font-size: large !important;
 }
 
-//Firefox 1+
-@-webkit-keyframes flash {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1.0; }
+.font-larger {
+    font-size: larger !important;
 }
 
-//Safari 3-4
-@-moz-keyframes flash {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1.0; }
+.font-x-large {
+    font-size: x-large !important;
+}
+
+.font-xx-large {
+    font-size: xx-large !important;
+}
+
+.credits-amount {
+    font-size: 20px;
+}
+
+textarea#content {
+    padding: 0;
+    height: 20em;
 }

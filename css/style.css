@@ -592,3 +592,16 @@ textarea#content {
 .color-row {
   margin-bottom: -5px;
 }
+
+rect.graph {
+  fill: #5976a8;
+  stroke-width: 0;
+}
+
+rect.graph.black {
+  fill: black;
+}
+
+rect.graph.white {
+  fill: white;
+}

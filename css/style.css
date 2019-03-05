@@ -22,6 +22,39 @@ body {
   height: 100%;
 }
 
+#fb-share-button {
+  background: #3b5998;
+  border-radius: 3px;
+  font-weight: 600;
+  padding: 3px 4px;
+  display: inline-block;
+  position: static;
+}
+
+#fb-share-button:hover {
+  cursor: pointer;
+  background: #213A6F;
+}
+
+#fb-share-button.disabled {
+  cursor: disabled;
+  background: #626b78;
+}
+
+#fb-share-button svg {
+  width: 18px;
+  fill: white;
+  vertical-align: middle;
+  border-radius: 2px
+}
+
+#fb-share-button span {
+  vertical-align: middle;
+  color: white;
+  font-size: 14px;
+  padding: 0 3px
+}
+
 #app {
   min-height: 100%;
   position: relative;
@@ -386,13 +419,22 @@ header hr {
     font-size: 3em !important;
 }
 
-.icon-to_end_of_game, .icon-rewind_to_start {
-  font-size: 2.4em !important;
+.controls i {
+  font-size: 2.8em !important;
+}
+
+.controls .icon-to_end_of_game, .controls .icon-rewind_to_start {
+  font-size: 3.3em !important;
 }
 
 .navigate-previous-mistake, .navigate-next-mistake {
   color: #dc3545 !important;
 }
+
+.controls .disabled {
+  color: #626b78 !important;
+}
+
 
 .worst-moves {
   max-height: 450px;
@@ -430,10 +472,6 @@ header hr {
 
 [class^="icon-"], .user-icon, .fullscreen-button {
     font-size: xx-large;
-}
-
-.select-variation {
-    cursor: pointer;
 }
 
 .font-xx-small {

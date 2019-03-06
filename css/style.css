@@ -130,8 +130,18 @@ a:focus {
   color: white;
 }
 
+.page-link, .page-item.disabled .page-link {
+  background-color: #477ea7;
+  border: none;
+}
+
 #game .btn-link {
     text-decoration: none;
+}
+
+.btn-link.disabled {
+  cursor: not-allowed !important;
+  color: gray !important;
 }
 
 .modal {
@@ -237,7 +247,7 @@ a, .btn-link {
 }
 
 .tags-icon {
-  color: #b36d4c;
+  color: #967146;
 }
 
 #content .card {

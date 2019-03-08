@@ -519,10 +519,11 @@ textarea#content {
 }
 
 .dropdown-content {
-    position: absolute;
-    z-index: 1;
-    min-width: 260px;
-}
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;}
 
 #content .dropdown-content .card {
   background-color: white !important;

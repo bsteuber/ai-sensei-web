@@ -272,6 +272,10 @@ a, .btn-link {
   overflow-y: auto;
 }
 
+.controls {
+  height: 3em;
+}
+
 #board {
   overflow: overlay;
 }

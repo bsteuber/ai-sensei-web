@@ -164,7 +164,6 @@ a:focus {
 .btn-signup {
   color: #06050b;
   background-color: rgb(234, 175, 69);
-  text-transform: uppercase;
 }
 
 .btn-link.disabled {

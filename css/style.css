@@ -151,6 +151,10 @@ a:focus {
   text-decoration: none;
 }
 
+.blue-box .landing-feature-title {
+    color: #ffc300 !important;
+}
+
 .btn-xl {
   font-size: 1.75rem;
   line-height: 2;

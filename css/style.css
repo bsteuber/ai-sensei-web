@@ -112,8 +112,20 @@ a:focus {
   outline: none;
 }
 
+.blue-box {
+    background-color: rgba(29, 47, 100, 0.81)
+}
+
+.blue-box, .blue-box h1, .blue-box h2, .blue-box h3, .blue-box h4, .blue-box h5 {
+    color: white !important;
+}
+
+.blue-box a {
+    color: #4f88ff !important;
+}
+
 #header .login-bar-wrapper {
-  background-color: #055b92;
+    background-color: #055b92;
 }
 
 #header,
@@ -136,7 +148,19 @@ a:focus {
 }
 
 #game .btn-link {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.btn-xl {
+  font-size: 1.75rem;
+  line-height: 2;
+  padding: 1rem 2rem;
+}
+
+.btn-signup {
+  color: #06050b;
+  background-color: rgb(234, 175, 69);
+  text-transform: uppercase;
 }
 
 .btn-link.disabled {
@@ -250,8 +274,8 @@ a, .btn-link {
   color: #967146;
 }
 
-#content .card {
-  background-color: rgba(185,200,231,0.9);
+#content .card, .bg-blue {
+  background-color: rgba(142, 166, 219, 0.9);
 }
 
 #buy-credits-dialog {

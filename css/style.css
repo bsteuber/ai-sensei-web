@@ -12,6 +12,12 @@
   font-style: normal;
 }
 
+:root {
+  --mistake-color: #cf2200;
+  --good-color: #007000;
+  --move-color: #002090;
+}
+
 body {
 }
 
@@ -22,11 +28,16 @@ body {
   height: 100%;
 }
 
+@media (min-resolution: 1.5dppx) { html { font-size: 80%; } }
+@media (min-resolution: 2dppx)   { html { font-size: 70%; } }
+@media (min-resolution: 3dppx)   { html { font-size: 60%; } }
+@media (min-resolution: 4dppx)   { html { font-size: 50%; } }
+
 #fb-share-button {
   background: #3b5998;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   font-weight: 600;
-  padding: 3px 4px;
+  padding: 0.1875rem 0.25rem;
   display: inline-block;
   position: static;
 }
@@ -42,17 +53,17 @@ body {
 }
 
 #fb-share-button svg {
-  width: 18px;
+  width: 1.125rem;
   fill: white;
   vertical-align: middle;
-  border-radius: 2px
+  border-radius: 0.125rem;
 }
 
 #fb-share-button span {
   vertical-align: middle;
   color: white;
-  font-size: 14px;
-  padding: 0 3px
+  font-size: 0.875rem;
+  padding: 0 0.1875rem;
 }
 
 #app {
@@ -66,33 +77,33 @@ body {
 }
 
 #header .nav-button {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #header .user-name {
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 
 #content {
-  padding-top: 15px;
-  padding-bottom: 7em;   /* padding + height of the footer */
+  padding-top: 1rem;
+  padding-bottom: 7rem;   /* padding + height of the footer */
 }
 
 #game {
-  margin-top: -15px;
+  margin-top: -1rem;
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3em;   /* Height of the footer */
+  height: 3rem;   /* Height of the footer */
   background-color: rgba(0, 12, 48, 0.7) ;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .footer-mobile {
-  height: 5em;   /* Height of the footer */
+  height: 5rem;   /* Height of the footer */
 }
 
 html {
@@ -204,12 +215,12 @@ a, .btn-link {
 
 #header .nav-bar-wrapper {
   background-color: #012d55;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #header .logo img {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 #header a:hover {
@@ -249,12 +260,12 @@ a, .btn-link {
 
 .price-credits {
     color: #f0e13e;
-    text-shadow: 1px 1px 3px #000;
+    text-shadow: 0.0625rem 0.0625rem 0.1875rem #000;
 }
 
 .buy-credits {
     color: #f0e13e;
-    text-shadow: 1px 1px 1px #444;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #444;
 }
 
 #game-header {
@@ -299,8 +310,24 @@ a, .btn-link {
   overflow-y: auto;
 }
 
+
+@media (min-width: 640px) and (min-resolution: 1.5dppx) and (orientation: landscape) {
+  .col-landscape-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-landscape-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+}
+
+
+
 .controls {
-  height: 3em;
+  height: 3rem;
 }
 
 #board {
@@ -312,12 +339,12 @@ a, .btn-link {
 
 .analysis-tag {
   display: inline-block;
-  width: 4em;
+  width: 4rem;
 }
 
 .playouts-tag {
   display: inline-block;
-  width: 9em;
+  width: 9rem;
 }
 
 label.moves-tag {
@@ -326,21 +353,21 @@ label.moves-tag {
 }
 
 input.moves-slider {
-  margin-top: 4px;
-  margin-left: 1em;
+  margin-top: 0.25rem;
+  margin-left: 1rem;
 }
 
 div.form-group {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.3rem;
 }
 
 input.form-control-file {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 .variant-tree {
-    padding-top: 1em;
-    padding-left: 10em;
+    padding-top: 1rem;
+    padding-left: 10rem;
 }
 
 .variant-tree g.root {
@@ -380,35 +407,17 @@ input.form-control-file {
 }
 
 header {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 header .logo {
-  width: "64px";
-  height: "64px";
+  width: 4rem;
+  height: 4rem;
 }
 
 header h1 {
   white-space: nowrap;
-  margin-top: 0.2em;
-}
-
-header hr {
-  margin-top: 0rem;
-}
-
-header {
-  margin-top: 2em;
-}
-
-header .logo {
-  width: "64px";
-  height: "64px";
-}
-
-header h1 {
-  white-space: nowrap;
-  margin-top: 0.2em;
+  margin-top: 0.2rem;
 }
 
 header hr {
@@ -429,19 +438,19 @@ header hr {
 
 .payment-option {
     display: inline-block;
-    height: 2em;
+    height: 2rem;
 }
 
 .pay-credits-amount {
   display: inline-block;
-  width: 5.5em;
-  height: 2em;
-  margin-right: 0.5em;
+  width: 5.5rem;
+  height: 2rem;
+  margin-right: 0.5rem;
 }
 
 .pay-credits-price {
   display: inline-block;
-  width: 2em;
+  width: 2rem;
 }
 
 .table-hover tr {
@@ -453,23 +462,23 @@ header hr {
 }
 
 .icon-page_back {
-    font-size: 2.1em !important;
+    font-size: 2.1rem !important;
 }
 
 .icon-white_black, .icon-black_white {
-    font-size: 3em !important;
+    font-size: 3rem !important;
 }
 
 .controls i {
-  font-size: 2.8em !important;
+  font-size: 2.8rem !important;
 }
 
 .controls .icon-to_end_of_game, .controls .icon-rewind_to_start {
-  font-size: 3.3em !important;
+  font-size: 3.3rem !important;
 }
 
 .navigate-previous-mistake, .navigate-next-mistake {
-  color: #dc3545 !important;
+  color: var(--mistake-color) !important;
 }
 
 .controls .disabled {
@@ -478,14 +487,14 @@ header hr {
 
 
 .worst-moves {
-  max-height: 450px;
+  max-height: 28.125rem;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 .worst-moves .mistake-info-row {
-    padding-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
 }
 
 .worst-moves .mistake-info-row:hover {
@@ -498,7 +507,47 @@ header hr {
 }
 
 .analysis-progress, .winrate-progress {
-  height: 6px;
+  height: 0.625rem;
+}
+
+#score-graph text.move-text {
+  fill: var(--move-color);
+}
+
+#score-graph .mistake text.move-text {
+  fill: var(--mistake-color);
+}
+
+#score-graph g.highlight rect {
+  fill: var(--move-color);
+  shape-rendering: crispEdges;
+}
+
+#score-graph g.highlight.mistake,
+#score-graph g.highlight.mistake rect  {
+  fill: var(--mistake-color);
+}
+
+#score-graph g.highlight.mistake text {
+  filter: brightness(80%);
+}
+
+#info-wrapper .progress-bar.bg-danger {
+  background-color: var(--mistake-color) !important;
+}
+
+#info-wrapper .progress-bar.bg-success {
+  background-color: var(--good-color) !important;
+}
+
+#info-wrapper .text-danger {
+  color: var(--mistake-color) !important;
+  filter: brightness(80%);
+}
+
+#info-wrapper .text-success {
+  color: var(--good-color) !important;
+  filter: brightness(70%);
 }
 
 .mistake-threshold-slider, .mistake-threshold-slider:focus {
@@ -508,40 +557,48 @@ header hr {
 }
 
 .option-flex {
-    height: 34px;
+    height: 2.125rem;
 }
 
 [class^="icon-"], .user-icon, .fullscreen-button {
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .font-xx-small {
-    font-size: 0px !important;
+    font-size: 0 !important;
+}
+
+.font-x-small {
+    font-size: 0.625rem !important;
+}
+
+.font-small {
+    font-size: 0.833rem !important;
 }
 
 .font-large {
-    font-size: large !important;
+    font-size: 1.125rem !important;
 }
 
 .font-larger {
-    font-size: larger !important;
+    font-size: 1.3rem !important;
 }
 
 .font-x-large {
-    font-size: x-large !important;
+    font-size: 1.5rem !important;
 }
 
 .font-xx-large {
-    font-size: xx-large !important;
+    font-size: 2rem !important;
 }
 
 .credits-amount {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 textarea#content {
     padding: 0;
-    height: 20em;
+    height: 20rem;
 }
 
 .dropdown-container {
@@ -564,8 +621,8 @@ textarea#content {
 .modal-wrapper {
   display: flex;
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 1040
@@ -632,18 +689,53 @@ textarea#content {
 }
 
 .color-row {
-  margin-bottom: -5px;
+  margin-bottom: -0.3125rem;
 }
 
-rect.graph {
+.graph {
   fill: #5976a8;
   stroke-width: 0;
 }
 
-rect.graph.black {
+.graph-black-area {
+    fill: #00000050;
+}
+
+.graph-white-area {
+    fill: #ffffff50;
+}
+
+.graph-zero-line {
+    stroke-width: 2;
+    stroke: #043db0;
+}
+
+rect.black-errors {
   fill: black;
 }
 
-rect.graph.white {
-  fill: white;
+rect.white-errors {
+    fill: white;
+}
+
+.graph-axis-text {
+    font: 12px sans-serif;
+}
+
+
+/* Board svg */
+
+circle.ownership.diff.pos { fill: #22dd33; }
+circle.ownership.diff.neg { fill: #dd1122; }
+circle.ownership.abs.pos { fill: white; stroke: black; }
+circle.ownership.abs.neg { fill: black; stroke: white; }
+
+circle.ownership.diff.black { stroke: black; }
+circle.ownership.diff.white { stroke: white; }
+
+
+g.lines line {
+  stroke: black;
+  vector-effect: non-scaling-stroke;
+  shape-rendering: crispEdges;
 }

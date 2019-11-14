@@ -280,6 +280,10 @@ a, .btn-link {
   color: #be1632;
 }
 
+.tutorial-button {
+  color: #f0e13e;
+}
+
 .fullscreen-button {
   color: #22abe4;
 }
@@ -488,8 +492,6 @@ header hr {
 
 .worst-moves {
   max-height: 28.125rem;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .worst-moves .mistake-info-row {
@@ -733,9 +735,28 @@ circle.ownership.abs.neg { fill: black; stroke: white; }
 circle.ownership.diff.black { stroke: black; }
 circle.ownership.diff.white { stroke: white; }
 
+svg image.stone {
+  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.8));
+}
 
 g.lines line {
   stroke: black;
   vector-effect: non-scaling-stroke;
   shape-rendering: crispEdges;
+}
+
+.popover-body {
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0, 0.5);
+}
+
+.tutorial-wrapper, .tutorial-wrapper h3 {
+  color: black !important;
+}
+
+.tutorial-wrapper hr {
+  border-top-color: black;
+}
+
+.tutorial-wrapper .btn-link {
+  color: #002f90 !important;
 }

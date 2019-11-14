@@ -6,8 +6,11 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-151341365-1');
+      var host = "ai-sensei.com";
+      if (host == window.location.host) {
+        gtag('js', new Date());
+        gtag('config', 'UA-151341365-1');
+      }
     </script>
 
     <title>AI Sensei</title>

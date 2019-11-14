@@ -492,6 +492,8 @@ header hr {
 
 .worst-moves {
   max-height: 28.125rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .worst-moves .mistake-info-row {

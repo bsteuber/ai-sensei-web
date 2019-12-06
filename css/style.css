@@ -28,10 +28,10 @@ body {
   height: 100%;
 }
 
-@media (min-resolution: 1.5dppx) { html { font-size: 80%; } }
-@media (min-resolution: 2dppx)   { html { font-size: 70%; } }
-@media (min-resolution: 3dppx)   { html { font-size: 60%; } }
-@media (min-resolution: 4dppx)   { html { font-size: 50%; } }
+/* @media (min-resolution: 1.5dppx) { html { font-size: 80%; } } */
+/* @media (min-resolution: 2dppx)   { html { font-size: 70%; } } */
+/* @media (min-resolution: 3dppx)   { html { font-size: 60%; } } */
+/* @media (min-resolution: 4dppx)   { html { font-size: 50%; } } */
 
 #fb-share-button {
   background: #3b5998;

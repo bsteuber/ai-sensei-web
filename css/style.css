@@ -123,16 +123,35 @@ a:focus {
   outline: none;
 }
 
-.blue-box {
-    background-color: rgba(29, 47, 100, 0.81)
+.feature-card, .sample-box {
+    border-radius: 0.5rem;
+    background-color: rgba(29, 47, 100, 0.81) !important;
 }
 
-.blue-box, .blue-box h1, .blue-box h2, .blue-box h3, .blue-box h4, .blue-box h5 {
+.sample-box a {
+    color: #4f88ff !important;
+}
+
+.feature-card:hover  {
+    background-color: rgba(29, 47, 100, 0.51) !important;
+}
+
+.feature-card a {
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: normal;
+}
+
+.feature-card, .feature-card h1, .feature-card h2,
+.feature-card h3, .feature-card h4, .feature-card h5,
+.sample-box, .sample-box h1, .sample-box h2,
+.sample-box h3, .sample-box h4, .sample-box h5
+{
     color: white !important;
 }
 
-.blue-box a {
-    color: #4f88ff !important;
+.feature-card .landing-feature-title {
+    color: #ffc300 !important;
 }
 
 #header .login-bar-wrapper {
@@ -160,10 +179,6 @@ a:focus {
 
 #game .btn-link {
   text-decoration: none;
-}
-
-.blue-box .landing-feature-title {
-    color: #ffc300 !important;
 }
 
 .btn-xl {
@@ -457,13 +472,29 @@ header hr {
   width: 2rem;
 }
 
-.table-hover tr {
+.game-row {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
 }
 
-.table-hover tr.game-row-disabled {
-  cursor: wait;
+.player-name.winner {
+  font-weight: bold;
 }
+
+a.game-row:hover {
+  text-decoration: none;
+}
+
+.game-row:hover {
+  background-color: rgba(0,0,0,.075);
+}
+
+.game-row:active {
+  background-color: rgba(255,255,255,.075);
+}
+
 
 .icon-page_back {
     font-size: 2.1rem !important;

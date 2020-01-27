@@ -297,10 +297,52 @@ a, .btn-link {
 
 .tutorial-button {
   color: #f0e13e;
+  user-select: none;
 }
 
 .fullscreen-button {
+  margin-top: 7rem;
+}
+
+.fullscreen-button:before {
+  font-size: 2.3rem;
   color: #22abe4;
+  padding-left: 0.15rem;
+}
+
+.game-info-button {
+  margin-top: 7rem;
+  vertical-align: top;
+  font-size: 1.5rem;
+  user-select: none;
+  line-height: 2rem;
+}
+
+.game-info-button .fg, .game-info-button .bg {
+  line-height: 2.6rem;
+  font-size: 1.5rem;
+  width: 70%
+}
+
+.game-info-button .fg {
+  color: #227be4;
+}
+
+.game-info-button .fa-stack {
+  height: 2.5rem;
+  margin-left: 0.6rem;
+}
+
+.game-info-button .bg {
+  font-size: 1.4rem;
+}
+
+.game-info dt::after {
+  content: ": ";
+}
+
+.game-info dd {
+  margin-left: 2rem;
 }
 
 .tags-icon {
@@ -325,11 +367,6 @@ a, .btn-link {
   cursor: pointer;
 }
 
-#board-wrapper {
-  overflow-y: auto;
-}
-
-
 @media (min-width: 640px) and (min-resolution: 1.5dppx) and (orientation: landscape) {
   .col-landscape-7 {
     -ms-flex: 0 0 58.333333%;
@@ -349,9 +386,29 @@ a, .btn-link {
   height: 3rem;
 }
 
+#board-wrapper {
+  overflow-y: auto;
+}
+
 #board {
   overflow: overlay;
 }
+
+.mistakes select {
+  appearance: none;
+  background-color: rgba(180,180,180,0);
+  font-weight: bold;
+}
+
+.mistakes .mistake-text {
+  margin-top: 0.0rem;
+  font-weight: 500;
+}
+
+.sort-by-size .form-check-inline {
+  margin-right: 0;
+}
+
 .uploads>table>tbody>tr>td {
   vertical-align: middle;
 }
@@ -472,26 +529,28 @@ header hr {
   width: 2rem;
 }
 
-.game-row {
+.game-row-game {
   cursor: pointer;
   text-decoration: none;
-  color: black;
   font-weight: normal;
+}
+.game-row-game div {
+  color: black;
 }
 
 .player-name.winner {
   font-weight: bold;
 }
 
-a.game-row:hover {
+a.game-row-game:hover {
   text-decoration: none;
 }
 
-.game-row:hover {
+.game-row-game:hover {
   background-color: rgba(0,0,0,.075);
 }
 
-.game-row:active {
+.game-row-game:active {
   background-color: rgba(255,255,255,.075);
 }
 
@@ -757,6 +816,10 @@ rect.white-errors {
     font: 12px sans-serif;
 }
 
+.edit-translation .icon-edit {
+  font-size: 1.0rem;
+  vertical-align: super;
+}
 
 /* Board svg */
 
@@ -769,7 +832,8 @@ circle.ownership.diff.black { stroke: black; }
 circle.ownership.diff.white { stroke: white; }
 
 svg image.stone {
-  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.8));
+  filter: url(#stone_shadow_filter);
+  /* filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.8)); */
 }
 
 g.lines line {

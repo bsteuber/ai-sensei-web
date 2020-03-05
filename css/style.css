@@ -18,9 +18,6 @@
   --move-color: #002090;
 }
 
-body {
-}
-
 html,
 body {
   margin: 0;
@@ -112,28 +109,26 @@ html {
 
 body, #game.fullscreen {
   margin-top: 0;
-  background: url("/img/background.png") no-repeat bottom center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 a:focus {
   outline: none;
 }
 
+.w-auto {
+  width: max-content !important;
+}
+
+.round-corners {
+      border-radius: 0.5rem;
+}
+
 .feature-card, .sample-box {
-    border-radius: 0.5rem;
     background-color: rgba(29, 47, 100, 0.81) !important;
 }
 
-.sample-box a {
+.sample-box a, .showcase-game .player-name, .showcase-game i {
     color: #4f88ff !important;
-}
-
-.feature-card:hover  {
-    background-color: rgba(29, 47, 100, 0.51) !important;
 }
 
 .feature-card a {
@@ -150,9 +145,26 @@ a:focus {
     color: white !important;
 }
 
+.feature-card .link {
+  color: #5d8ff7 !important;
+}
+
+.feature-card .link:hover {
+  color: #4e76c8 !important;
+}
+
+.feature-card .feature:hover {
+  color: #9a9a9a !important;
+}
+
 .feature-card .landing-feature-title {
     color: #ffc300 !important;
 }
+
+.feature-card .feature:hover .landing-feature-title {
+  color: #a28118 !important;
+}
+
 
 #header .login-bar-wrapper {
     background-color: #055b92;
@@ -225,7 +237,7 @@ a, .btn-link {
 #header .modal .btn-link,
 .card .btn-link,
 .link {
-  color: #002f90;
+  color: #002f90 ;
 }
 
 #header .nav-bar-wrapper {
@@ -508,8 +520,17 @@ header hr {
   z-index: 2000000002;
 }
 
+.delete-button {
+  padding: 0.1rem 0 0 0;
+  border-radius: 0.3rem;
+}
+
 .disabled {
     cursor: not-allowed !important;
+}
+
+.i18n-editor th.key {
+  min-width: 10rem;
 }
 
 .payment-option {
@@ -533,6 +554,7 @@ header hr {
   cursor: pointer;
   text-decoration: none;
   font-weight: normal;
+  padding: 0.2rem 0;
 }
 .game-row-game div {
   color: black;
@@ -554,6 +576,16 @@ a.game-row-game:hover {
   background-color: rgba(255,255,255,.075);
 }
 
+.game-row .game-title {
+  font-size: 80%;
+  color: rgba(0,0,100,0.75);
+}
+
+img.white-black {
+  height: 1.3rem;
+  vertical-align: middle;
+  margin-bottom: 0.1rem;
+}
 
 .icon-page_back {
     font-size: 2.1rem !important;
@@ -654,7 +686,7 @@ a.game-row-game:hover {
     height: 2.125rem;
 }
 
-[class^="icon-"], .user-icon, .fullscreen-button {
+[class^="icon-"], [class*=" icon-"], .user-icon, .fullscreen-button {
     font-size: 2rem;
 }
 
@@ -668,6 +700,10 @@ a.game-row-game:hover {
 
 .font-small {
     font-size: 0.833rem !important;
+}
+
+.font-main-navigation {
+  font-size: 1.2rem !important;
 }
 
 .font-large {
@@ -686,13 +722,17 @@ a.game-row-game:hover {
     font-size: 2rem !important;
 }
 
+.error {
+  color: white;
+}
+
 .credits-amount {
     font-size: 1.25rem;
 }
 
-textarea#content {
+.news-editor textarea#content {
     padding: 0;
-    height: 20rem;
+    height: 15rem;
 }
 
 .dropdown-container {
@@ -719,7 +759,7 @@ textarea#content {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 1040
+  z-index: 1040;
 }
 
 .modal-wrapper.hide-modal {
@@ -819,6 +859,7 @@ rect.white-errors {
 .edit-translation .icon-edit {
   font-size: 1.0rem;
   vertical-align: super;
+  cursor: pointer;
 }
 
 /* Board svg */
@@ -856,4 +897,38 @@ g.lines line {
 
 .tutorial-wrapper .btn-link {
   color: #002f90 !important;
+}
+
+.badge-basic {
+    color: #333;
+    background-color: #5ac5f9;
+}
+
+.badge-standard {
+    color: #333;
+    background-color: #dedede;
+}
+
+.badge-pro {
+    color: #333;
+    background-color: gold;
+}
+
+.card-option-selected {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px blue;
+}
+
+.card-option-unselected:hover {
+    border-color: transparent;
+    box-shadow: 0 0 0 1px blue;
+}
+
+.card-option-selected .card-check-mark {
+    color: blue;
+}
+
+.markdown th, .markdown td {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

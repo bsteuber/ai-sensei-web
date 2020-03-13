@@ -750,6 +750,9 @@ img.white-black {
 #content .dropdown-content .card {
   background-color: white !important;
   color: black;
+  max-height: 95vh;
+  max-width: 95vw;
+  overflow: auto;
 }
 
 .modal-wrapper {
@@ -899,20 +902,26 @@ g.lines line {
   color: #002f90 !important;
 }
 
-.badge-basic {
+.badge-basic, .badge-standard, .badge-pro {
     color: #333;
-    background-color: #5ac5f9;
 }
 
-.badge-standard {
-    color: #333;
-    background-color: #dedede;
+.plan-card {
+  border: 2px solid #060d82;
 }
 
-.badge-pro {
-    color: #333;
-    background-color: gold;
+.badge-basic, .plan-card-basic {
+  background-color: #9bbaf7;
 }
+
+.badge-standard, .plan-card-standard {
+  background-color: #ddd;
+}
+
+.badge-pro, .plan-card-pro {
+  background-color: #e3c108;
+}
+
 
 .card-option-selected {
     border-color: transparent;

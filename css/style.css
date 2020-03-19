@@ -23,6 +23,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  color: white;
+}
+
+#com-rigsomelight-devcards-main {
+  color: black;
 }
 
 /* @media (min-resolution: 1.5dppx) { html { font-size: 80%; } } */

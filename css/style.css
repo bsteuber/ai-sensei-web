@@ -946,3 +946,7 @@ g.lines line {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.trade-in-bonus {
+    color: #0d06f2;
+}

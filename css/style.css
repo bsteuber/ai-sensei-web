@@ -407,8 +407,9 @@ a, .btn-link {
   overflow-y: auto;
 }
 
-#board {
+.board {
   overflow: overlay;
+  user-select: none;
 }
 
 .mistakes select {
@@ -608,6 +609,10 @@ img.white-black {
   font-size: 3.3rem !important;
 }
 
+.controls .navigate-quiz-mode {
+  font-size: 1.7rem; !important;
+}
+
 .navigate-previous-mistake, .navigate-next-mistake {
   color: var(--mistake-color) !important;
 }
@@ -725,6 +730,10 @@ img.white-black {
 
 .font-xx-large {
     font-size: 2rem !important;
+}
+
+.controls i.quiz-check {
+    font-size: 1.8rem !important;
 }
 
 .error {
@@ -889,6 +898,17 @@ g.lines line {
   stroke: black;
   vector-effect: non-scaling-stroke;
   shape-rendering: crispEdges;
+}
+
+@keyframes check-mark-keyframes {
+  0%   {opacity: 1;   transform: scale(1); animation-timing-function: ease-in; }
+  80%  {opacity: 0.3; transform: scale(2); animation-timing-function: linear; }
+  100% {opacity: 0;   transform: scale(7); animation-timing-function: ease-out; }
+}
+
+.quiz-mark text {
+  opacity: 0;
+  animation: check-mark-keyframes 0.5s 1;
 }
 
 .popover-body {

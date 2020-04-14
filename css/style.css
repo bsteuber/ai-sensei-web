@@ -74,16 +74,16 @@ body {
 }
 
 #header {
-    padding: 0;
-    font-family: d-din;
+  padding: 0;
+  font-family: d-din;
 }
 
 #header .nav-button {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #header .user-name {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 #content {
@@ -125,21 +125,21 @@ a:focus {
 }
 
 .round-corners {
-      border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .feature-card, .sample-box {
-    background-color: rgba(29, 47, 100, 0.81) !important;
+  background-color: rgba(29, 47, 100, 0.81) !important;
 }
 
 .sample-box a, .showcase-game .player-name, .showcase-game i {
-    color: #4f88ff !important;
+  color: #4f88ff !important;
 }
 
 .feature-card a {
-    color: white !important;
-    text-decoration: none !important;
-    font-weight: normal;
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: normal;
 }
 
 .feature-card, .feature-card h1, .feature-card h2,
@@ -147,7 +147,7 @@ a:focus {
 .sample-box, .sample-box h1, .sample-box h2,
 .sample-box h3, .sample-box h4, .sample-box h5
 {
-    color: white !important;
+  color: white !important;
 }
 
 .feature-card .link {
@@ -163,7 +163,7 @@ a:focus {
 }
 
 .feature-card .landing-feature-title {
-    color: #ffc300 !important;
+  color: #ffc300 !important;
 }
 
 .feature-card .feature:hover .landing-feature-title {
@@ -172,7 +172,7 @@ a:focus {
 
 
 #header .login-bar-wrapper {
-    background-color: #055b92;
+  background-color: #055b92;
 }
 
 #header,
@@ -228,7 +228,7 @@ a:focus {
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a, .btn-link {
@@ -287,17 +287,17 @@ a, .btn-link {
 }
 
 .credits {
-    color: #d6c939;
+  color: #d6c939;
 }
 
 .price-credits {
-    color: #f0e13e;
-    text-shadow: 0.0625rem 0.0625rem 0.1875rem #000;
+  color: #f0e13e;
+  text-shadow: 0.0625rem 0.0625rem 0.1875rem #000;
 }
 
 .buy-credits {
-    color: #f0e13e;
-    text-shadow: 0.0625rem 0.0625rem 0.0625rem #444;
+  color: #f0e13e;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem #444;
 }
 
 #game-header {
@@ -412,7 +412,7 @@ a, .btn-link {
   user-select: none;
 }
 
-.mistakes select {
+.mistakes select, .katago-settings select {
   appearance: none;
   background-color: rgba(180,180,180,0);
   font-weight: bold;
@@ -460,34 +460,34 @@ input.form-control-file {
 }
 
 .variant-tree {
-    padding-top: 1rem;
-    padding-left: 10rem;
+  padding-top: 1rem;
+  padding-left: 10rem;
 }
 
 .variant-tree g.root {
-    fill: red;
+  fill: red;
 }
 
 .variant-tree g.white {
-    fill: white;
+  fill: white;
 }
 
 .variant-tree g.black {
-    fill: black;
+  fill: black;
 }
 
 .variant-tree svg circle {
-    cursor: pointer;
-    stroke: black;
+  cursor: pointer;
+  stroke: black;
 }
 
 .variant-tree text {
-    display: none;
+  display: none;
 }
 
 .variant-tree path.link {
-    fill: none;
-    stroke: black;
+  fill: none;
+  stroke: black;
 }
 
 
@@ -496,8 +496,8 @@ input.form-control-file {
 }
 
 .footer a:hover {
-    color: #dddddd;
-    text-decoration: none;
+  color: #dddddd;
+  text-decoration: none;
 }
 
 header {
@@ -532,7 +532,7 @@ header hr {
 }
 
 .disabled {
-    cursor: not-allowed !important;
+  cursor: not-allowed !important;
 }
 
 .i18n-editor th.key {
@@ -540,8 +540,8 @@ header hr {
 }
 
 .payment-option {
-    display: inline-block;
-    height: 2rem;
+  display: inline-block;
+  height: 2rem;
 }
 
 .pay-credits-amount {
@@ -594,11 +594,11 @@ img.white-black {
 }
 
 .icon-page_back {
-    font-size: 2.1rem !important;
+  font-size: 2.1rem !important;
 }
 
 .icon-white_black, .icon-black_white {
-    font-size: 3rem !important;
+  font-size: 3rem !important;
 }
 
 .controls i {
@@ -611,6 +611,12 @@ img.white-black {
 
 .controls .navigate-quiz-mode {
   font-size: 1.7rem; !important;
+  user-select: none;
+}
+
+.controls .navigate-quiz-mode i {
+  font-size: 1.4rem !important;
+  padding-left: 0.2rem;
 }
 
 .navigate-previous-mistake, .navigate-next-mistake {
@@ -629,8 +635,8 @@ img.white-black {
 }
 
 .worst-moves .mistake-info-row {
-    padding-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
+  padding-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
 }
 
 .worst-moves .mistake-info-row:hover {
@@ -693,23 +699,23 @@ img.white-black {
 }
 
 .option-flex {
-    height: 2.125rem;
+  height: 2.125rem;
 }
 
 [class^="icon-"], [class*=" icon-"], .user-icon, .fullscreen-button {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .font-xx-small {
-    font-size: 0 !important;
+  font-size: 0 !important;
 }
 
 .font-x-small {
-    font-size: 0.625rem !important;
+  font-size: 0.625rem !important;
 }
 
 .font-small {
-    font-size: 0.833rem !important;
+  font-size: 0.833rem !important;
 }
 
 .font-main-navigation {
@@ -717,23 +723,19 @@ img.white-black {
 }
 
 .font-large {
-    font-size: 1.125rem !important;
+  font-size: 1.125rem !important;
 }
 
 .font-larger {
-    font-size: 1.3rem !important;
+  font-size: 1.3rem !important;
 }
 
 .font-x-large {
-    font-size: 1.5rem !important;
+  font-size: 1.5rem !important;
 }
 
 .font-xx-large {
-    font-size: 2rem !important;
-}
-
-.controls i.quiz-check {
-    font-size: 1.8rem !important;
+  font-size: 2rem !important;
 }
 
 .error {
@@ -741,17 +743,17 @@ img.white-black {
 }
 
 .credits-amount {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .news-editor textarea#content {
-    padding: 0;
-    height: 15rem;
+  padding: 0;
+  height: 15rem;
 }
 
 .dropdown-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -849,16 +851,16 @@ img.white-black {
 }
 
 .graph-black-area {
-    fill: #00000050;
+  fill: #00000050;
 }
 
 .graph-white-area {
-    fill: #ffffff50;
+  fill: #ffffff50;
 }
 
 .graph-zero-line {
-    stroke-width: 2;
-    stroke: #043db0;
+  stroke-width: 2;
+  stroke: #043db0;
 }
 
 rect.black-errors {
@@ -866,11 +868,11 @@ rect.black-errors {
 }
 
 rect.white-errors {
-    fill: white;
+  fill: white;
 }
 
 .graph-axis-text {
-    font: 12px sans-serif;
+  font: 12px sans-serif;
 }
 
 .edit-translation .icon-edit {
@@ -928,7 +930,7 @@ g.lines line {
 }
 
 .badge-basic, .badge-standard, .badge-pro {
-    color: #333;
+  color: #333;
 }
 
 .plan-card {
@@ -949,17 +951,17 @@ g.lines line {
 
 
 .card-option-selected {
-    border-color: transparent;
-    box-shadow: 0 0 0 2px blue;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px blue;
 }
 
 .card-option-unselected:hover {
-    border-color: transparent;
-    box-shadow: 0 0 0 1px blue;
+  border-color: transparent;
+  box-shadow: 0 0 0 1px blue;
 }
 
 .card-option-selected .card-check-mark {
-    color: blue;
+  color: blue;
 }
 
 .markdown th, .markdown td {
@@ -968,5 +970,5 @@ g.lines line {
 }
 
 .trade-in-bonus {
-    color: #0d06f2;
+  color: #0d06f2;
 }

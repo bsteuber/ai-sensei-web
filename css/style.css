@@ -73,19 +73,6 @@ body {
   position: relative;
 }
 
-#header {
-  padding: 0;
-  font-family: d-din;
-}
-
-#header .nav-button {
-  font-size: 1.2rem;
-}
-
-#header .user-name {
-  font-size: 1.1rem;
-}
-
 #content {
   padding-top: 1rem;
   padding-bottom: 7rem;   /* padding + height of the footer */
@@ -170,11 +157,6 @@ a:focus {
   color: #a28118 !important;
 }
 
-
-#header .login-bar-wrapper {
-  background-color: #055b92;
-}
-
 #header,
 #header .btn-link,
 #header a.logo,
@@ -243,47 +225,6 @@ a, .btn-link {
 .card .btn-link,
 .link {
   color: #002f90 ;
-}
-
-#header .nav-bar-wrapper {
-  background-color: #012d55;
-  font-size: 1rem;
-}
-
-#header .logo img {
-  width: 3.75rem;
-  height: 3.75rem;
-}
-
-#header a:hover {
-  text-decoration: none;
-}
-
-#header .nav-button {
-  color: #eee;
-  font-weight: bold;
-}
-
-#header .nav-button:hover,
-#header .nav-button.active {
-  color: #bbb;
-  cursor: pointer;
-}
-
-.login-bar .icon-log_in {
-  color: #22abe4;
-}
-
-.login-bar .icon-log_out {
-  color: #56a3d4;
-}
-
-.login-bar .icon-upload {
-  color: #68b5e2;
-}
-
-.login-bar .icon-reviews{
-  color: #f7b556;
 }
 
 .credits {
@@ -504,6 +445,10 @@ header {
   margin-top: 2rem;
 }
 
+#header .login-bar-wrapper {
+  background-color: #055b92;
+}
+
 header .logo {
   width: 4rem;
   height: 4rem;
@@ -517,6 +462,79 @@ header h1 {
 header hr {
   margin-top: 0rem;
 }
+
+#header {
+  padding: 0;
+  font-family: d-din;
+}
+
+#header .nav-bar-wrapper {
+  background-color: #012d55;
+  font-size: 1rem;
+}
+
+#header .logo img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+#header a:hover {
+  text-decoration: none;
+}
+
+#header .nav-button {
+  color: #eee;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#header .nav-button:hover,
+#header .nav-button.active {
+  color: #bbb;
+  cursor: pointer;
+}
+
+#header .login-bar .user-name {
+  font-size: 1.1rem;
+}
+
+[class^="icon-"], [class*=" icon-"], .user-icon, .fullscreen-button {
+  font-size: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .login-bar [class^="icon-"], .login-bar [class*=" icon-"], .login-bar .user-icon {
+    font-size: 2.5rem;
+  }
+  .login-bar .user-name {
+    font-size: 1.375rem;
+  }
+  .login-bar {
+    font-size: 1.25rem;
+  }
+
+}
+
+#header .login-bar {
+  line-height: 1.1rem;
+}
+
+#header .login-bar .icon-log_in {
+  color: #22abe4;
+}
+
+#header .login-bar .icon-log_out {
+  color: #56a3d4;
+}
+
+#header .login-bar .icon-upload {
+  color: #68b5e2;
+}
+
+#header .login-bar .icon-reviews{
+  color: #f7b556;
+}
+
 
 .modal {
   z-index: 2000000001;
@@ -700,10 +718,6 @@ img.white-black {
 
 .option-flex {
   height: 2.125rem;
-}
-
-[class^="icon-"], [class*=" icon-"], .user-icon, .fullscreen-button {
-  font-size: 2rem;
 }
 
 .font-xx-small {
@@ -971,4 +985,62 @@ g.lines line {
 
 .trade-in-bonus {
   color: #0d06f2;
+}
+
+#log-table {
+  overflow-y: scroll;
+  max-height: calc(100vh - 29rem);
+}
+
+#log-table td {
+  padding: 0 1rem;
+}
+
+#log-table tr {
+  background-color: #ffffff10;
+}
+
+#log-table tr:nth-child(even) {
+  background: #00000010;
+}
+
+#log-table-nav {
+  user-select: none;
+}
+
+.admin-layout {
+  margin: 0 1rem;
+}
+
+.admin-log-nav .arrow {
+  cursor: pointer;
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.admin-log-nav .arrow.inactive {
+  cursor: default;
+  color: #00000060;
+}
+
+.admin-log-nav .filter {
+  cursor: pointer;
+  font-size: 120%;
+  line-height: 1.8;
+}
+
+.admin-log-nav .filter .vm {
+  font-weight: bold;
+}
+
+.admin-log-nav .filter:hover:after {
+  font-weight: bold;
+  color: #c22;
+  margin-left: 0.6rem;
+  content: "X";
+}
+
+.admin-log-nav .filter .x:hover {
+  display: inherit;
 }

@@ -176,6 +176,20 @@ a:focus {
   border: none;
 }
 
+.faq .content.highlight {
+  background-color: #fff5;
+  padding: 1.0rem;
+  margin: 0 -1.0rem;
+}
+
+.faq .toc .highlight {
+  color: #001030;
+}
+
+.faq .toc a:hover {
+  color: #001f60;
+}
+
 #game .btn-link {
   text-decoration: none;
 }
@@ -224,7 +238,7 @@ a, .btn-link {
 #header .modal .btn-link,
 .card .btn-link,
 .link {
-  color: #002f90 ;
+  color: #002f90;
 }
 
 .credits {

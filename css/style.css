@@ -941,6 +941,16 @@ g.lines line {
   animation: check-mark-keyframes 0.5s 1;
 }
 
+.quiz-check {
+  color: #4cfd3d;
+}
+
+.board-check-mark {
+  stroke: #0eea30;
+  fill: #0eea30;
+}
+
+
 .popover-body {
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0, 0.5);
 }

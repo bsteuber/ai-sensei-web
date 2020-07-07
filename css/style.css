@@ -913,11 +913,6 @@ circle.ownership.abs.neg { fill: black; stroke: white; }
 circle.ownership.diff.black { stroke: black; }
 circle.ownership.diff.white { stroke: white; }
 
-svg image.stone {
-  filter: url(#stone_shadow_filter);
-  /* filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.8)); */
-}
-
 g.lines line {
   stroke: black;
   vector-effect: non-scaling-stroke;
@@ -1067,6 +1062,14 @@ g.lines line {
 
 .admin-log-nav .filter .x:hover {
   display: inherit;
+}
+
+.c3-xgrid-line.chart-marketing-event line {
+  stroke: rgba(157, 51, 10, 0.5);
+}
+
+.c3-xgrid-line.chart-marketing-event text {
+  fill: rgba(157, 51, 10, 0.87);
 }
 
 /* Slider CSS

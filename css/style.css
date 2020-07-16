@@ -773,6 +773,32 @@ img.white-black {
   height: 15rem;
 }
 
+.news-content pre {
+  white-space: pre-wrap;
+}
+
+.news-content img,
+.news-editor img {
+  max-width: 100%;
+  max-height: 500px;
+  float: right;
+  clear: both;
+}
+
+.news-content hr,
+.news-editor hr {
+  clear: both;
+}
+
+
+.news-content p::after,
+.news-editor p::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
 .dropdown-container {
   position: relative;
   display: inline-block;
@@ -783,7 +809,8 @@ img.white-black {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;}
+  z-index: 1;
+}
 
 #content .dropdown-content .card {
   background-color: white !important;
@@ -805,6 +832,11 @@ img.white-black {
 
 .modal-wrapper.hide-modal {
   display: none;
+}
+
+.modal-content {
+  max-height: 90vh;
+  overflow-y: scroll;
 }
 
 .backdrop {
@@ -901,6 +933,71 @@ rect.white-errors {
   font-size: 1.0rem;
   vertical-align: super;
   cursor: pointer;
+}
+
+.accept-cookie-overlay {
+  position: fixed;
+  border-top: 1px solid black;
+  z-index: 10;
+  bottom: 0;
+  width: 100vw;
+  min-width: 100vw;
+  padding: 1em;
+  background-color: rgb(234, 175, 69);
+  color: black;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 41px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #14B90E;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #14B90E;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
 }
 
 /* Board svg */

@@ -368,8 +368,7 @@ a, .btn-link {
 }
 
 .mistakes select, .katago-settings select {
-  appearance: none;
-  background-color: rgba(180,180,180,0);
+  background-color: rgba(177, 178, 212, 0.37);
   font-weight: bold;
 }
 

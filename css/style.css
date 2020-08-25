@@ -14,8 +14,10 @@
 
 :root {
   --mistake-color: #cf2200;
+  --mistake-color-alt: #af1200;
   --good-color: #007000;
   --move-color: #002090;
+  --move-color-alt: #001070;
 }
 
 html,
@@ -115,12 +117,19 @@ a:focus {
   border-radius: 0.5rem;
 }
 
-.feature-card, .sample-box {
-  background-color: rgba(29, 47, 100, 0.81) !important;
+
+.showcase img {
+  border: 2px solid black;
 }
 
-.sample-box a, .showcase-game .player-name, .showcase-game i {
-  color: #4f88ff !important;
+.card.landing-feature {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.landing-feature.dark {
+  background-color: rgba(29, 57, 100, 1) !important;
 }
 
 .feature-card a {
@@ -129,10 +138,8 @@ a:focus {
   font-weight: normal;
 }
 
-.feature-card, .feature-card h1, .feature-card h2,
-.feature-card h3, .feature-card h4, .feature-card h5,
-.sample-box, .sample-box h1, .sample-box h2,
-.sample-box h3, .sample-box h4, .sample-box h5
+.landing-feature.dark, .landing-feature.dark h1, .landing-feature.dark h2,
+.landing-feature.dark h3, .landing-feature.dark h4, .landing-feature.dark h5
 {
   color: white !important;
 }
@@ -149,12 +156,20 @@ a:focus {
   color: #9a9a9a !important;
 }
 
-.feature-card .landing-feature-title {
+.feature-card h4.landing-feature-title {
   color: #ffc300 !important;
 }
 
-.feature-card .feature:hover .landing-feature-title {
+.feature-card .feature:hover h4.landing-feature-title {
   color: #a28118 !important;
+}
+
+.landing-feature {
+  margin-top: 1em;
+}
+
+.landing-feature img {
+  vertical-align: middle;
 }
 
 #header,
@@ -240,6 +255,16 @@ a, .btn-link {
 .link {
   color: #002f90;
 }
+
+.modal a:active,
+.card a:active,
+.modal .btn-link:active,
+#header .modal .btn-link:active,
+.card .btn-link:active,
+.link:active {
+  color: #001f70;
+}
+
 
 .credits {
   color: #d6c939;
@@ -636,6 +661,10 @@ img.white-black {
   font-size: 3.6rem !important;
 }
 
+.controls .link:active i::before {
+  margin-top: 4px;
+}
+
 .controls .icon-to_end_of_game, .controls .icon-rewind_to_start {
   font-size: 4.3rem !important;
 }
@@ -653,6 +682,11 @@ img.white-black {
 .navigate-previous-mistake, .navigate-next-mistake {
   color: var(--mistake-color) !important;
 }
+
+.navigate-previous-mistake:active, .navigate-next-mistake:active {
+  color: var(--mistake-color-alt) !important;
+}
+
 
 .controls .disabled {
   color: #626b78 !important;

@@ -225,6 +225,16 @@ a:focus {
   color: gray !important;
 }
 
+.game-list-navs {
+  width: 100%;
+  max-width: 18rem;
+}
+
+.game-list-nav {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
 .modal {
   text-transform: none;
 }
@@ -375,12 +385,6 @@ a, .btn-link {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
   }
-}
-
-
-
-.controls {
-  height: 3rem;
 }
 
 #board-wrapper {
@@ -574,6 +578,20 @@ header hr {
 }
 
 
+#header .login-bar .library-icon {
+  font-size: 1.6rem;
+}
+
+.library-icon.highlight {
+  animation: jump 1.2s infinite;
+}
+
+@keyframes jump {
+     0% { transform: scale(1.1, 0.9); }
+    50% { transform: translate(0, -30%) scale(1, 1); }
+   100% { transform: scale(1.1, 0.9); }
+}
+
 .modal {
   z-index: 2000000001;
 }
@@ -618,6 +636,7 @@ header hr {
   font-weight: normal;
   padding: 0.2rem 0;
 }
+
 .game-row-game div {
   color: black;
 }
@@ -636,6 +655,11 @@ a.game-row-game:hover {
 
 .game-row-game:active {
   background-color: rgba(255,255,255,.075);
+}
+
+.game-row-game.nolink:hover, .game-row-game.nolink:active {
+  cursor: default;
+  background-color: transparent;
 }
 
 .game-row .game-title {
@@ -659,6 +683,35 @@ img.white-black {
 
 .controls i {
   font-size: 3.6rem !important;
+}
+
+
+.library-icon {
+  color: #eedcb0;
+}
+
+.inline-library-button {
+  margin: 0 0.5rem 0 0.5rem;
+  padding: 0.3rem 0.3rem 0 0.3rem;
+}
+
+i.library-icon {
+  font-size: 1.7rem !important;
+}
+
+.library-button i.fa-minus,
+.library-button i.fa-plus
+{
+  font-size: 0.8rem !important;
+  padding-left: 6px;
+}
+
+.add-library-icon {
+  color: #47f922;
+}
+
+.remove-library-icon {
+  color: var(--mistake-color);
 }
 
 .controls .link:active i::before {
@@ -1079,6 +1132,27 @@ circle.ownership.abs.neg { fill: black; stroke: white; }
 circle.ownership.diff.black { stroke: black; }
 circle.ownership.diff.white { stroke: white; }
 
+.board-label.white{
+  fill: #000;
+  stroke: #000;
+}
+
+.board-label.black{
+  fill: #FFF;
+  stroke: #FFF;
+}
+
+.board-label.mistake {
+  fill: #ff0000;
+  stroke: #ff0000;
+}
+
+.board-label.correct {
+  fill: #208c01;
+  stroke: #208c01;
+}
+
+
 g.lines line {
   stroke: black;
   vector-effect: non-scaling-stroke;
@@ -1176,6 +1250,15 @@ g.lines line {
   border: 1px solid black;
 }
 
+.card .table thead th {
+  border-bottom: none;
+}
+
+.card .table td, .card .table th {
+  border-top: none;
+}
+
+
 .trade-in-bonus {
   color: #0d06f2;
 }
@@ -1245,6 +1328,92 @@ g.lines line {
 .c3-xgrid-line.chart-marketing-event text {
   fill: rgba(157, 51, 10, 0.87);
 }
+
+.problem-stats .times {
+  padding-left: 0.1em;
+}
+
+.problem-stats.detailed .icon {
+  margin-left: -0.3em;
+}
+
+.problem .board-background {
+  transition: fill 0.5s ease 0.5s, stroke 0.5s ease 0.5s;
+}
+
+.problem .drop .board-background {
+  transition: fill 0.5s ease 0s, stroke 0.5s ease 0s;
+}
+
+.level-indicator-buttons {
+  font-size: 2.5rem;
+}
+
+.problem-stats.detailed {
+  font-size: 1.3rem;
+}
+
+:root {
+  --icon-fill-color: #009f2f;
+  --icon-stroke-color: #0c4e01;
+  --icon-rect-color: #103f90;
+  --icon-fill-grey: #c1c0c0;
+}
+
+
+.problem .board-background {
+  fill: var(--icon-fill-color);
+  stroke: var(--icon-stroke-color);
+}
+
+.problem.fresh {
+  --icon-fill-color: #fdfd5d;
+  --icon-stroke-color: #dfdf0b;
+}
+
+.problem.familiar {
+  --icon-fill-color: #ff994f;
+  --icon-stroke-color: #ac4d26;
+}
+
+.problem.memorized {
+  --icon-fill-color: #82f482;
+  --icon-stroke-color: #0c8e01;
+}
+
+.problem.mastered {
+  --icon-fill-color: #9ab2f4;
+  --icon-stroke-color: #021f75;
+}
+
+.problem rect.progress-open {
+  fill: var(--icon-fill-grey);
+}
+
+.problem rect.progress-done {
+  fill: var(--icon-rect-color);
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
+.problem .drop rect.progress-done,
+.problem rect.progress-open {
+  transition: fill 0.5s ease;
+
+}
+
+@keyframes leveldone {
+  0% { fill: var(--icon-rect-color); }
+  100% { fill: var(--icon-fill-grey); }
+}
+
+.problem .level-done rect {
+  fill: var(--icon-rect-color);
+  animation: leveldone 1s ease 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
 
 /* Slider CSS
 generated from http://danielstern.ca/range.css/?ref=css-tricks#/

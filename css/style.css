@@ -879,6 +879,15 @@ i.library-icon {
   font-size: 1.25rem;
 }
 
+#content .card.news-box {
+  background-color: #ddc398de;
+}
+
+.news-date {
+  margin-top: -0.8rem;
+  margin-right: -0.8rem;
+}
+
 .news-editor textarea#content {
   padding: 0;
   height: 15rem;

@@ -681,6 +681,10 @@ img.white-black {
   font-size: 3rem !important;
 }
 
+.nav-control {
+  margin: -1rem -0.8rem;
+}
+
 .controls i {
   font-size: 3.6rem !important;
 }
@@ -704,7 +708,15 @@ i.library-icon {
 {
   font-size: 0.8rem !important;
   padding-left: 6px;
+  margin-right: -0.7rem;
 }
+
+.size-xs .library-button i.fa-minus,
+.size-xs .library-button i.fa-plus
+{
+  margin-right: 0;
+}
+
 
 .add-library-icon {
   color: #47f922;
@@ -712,6 +724,14 @@ i.library-icon {
 
 .remove-library-icon {
   color: var(--mistake-color);
+}
+
+.controls-row {
+  margin: -1rem 0;
+}
+
+.size-xs .controls-row {
+  margin: -1.2rem -1rem -1.1rem;
 }
 
 .controls .link:active i::before {

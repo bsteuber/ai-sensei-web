@@ -727,11 +727,15 @@ i.library-icon {
 }
 
 .controls-row {
-  margin: -1rem 0;
+  margin: 0 0;
+}
+
+.size-sm .controls-row {
+  margin: -0.5rem 0;
 }
 
 .size-xs .controls-row {
-  margin: -1.2rem -1rem -1.1rem;
+  margin: -0.5rem -1rem -0.5rem;
 }
 
 .controls .link:active i::before {

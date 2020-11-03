@@ -1599,3 +1599,49 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
     /*Edge starts the margin from the thumb, not the track as other browsers do*/
   }
 }
+
+.voucher-page .alert {
+  margin-top: 1rem;
+}
+
+
+.voucher, .redeem-buttons, .voucher-page .print-button>div  {
+  width: 45em !important;
+}
+
+@media only print {
+
+  #header, .footer, .alert, .print-button, .card-title
+ {
+    display: none !important;
+  }
+
+  .card, body {
+    background: none !important;
+  }
+
+  .card-body {
+    /* enable printing of the background images */
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+
+    padding: 0;
+    background-image: url('/img/voucher-background-print.jpg') !important;
+  }
+
+  .card {
+    margin: 0 !important;
+    border: 0;
+  }
+
+  .card-body .card {
+    outline: 1px solid #888;
+  }
+
+}
+
+@media only screen {
+  .voucher .redeem-link {
+    display: none;
+  }
+}

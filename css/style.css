@@ -13,11 +13,129 @@
 }
 
 :root {
-  --mistake-color: #cf2200;
-  --mistake-color-alt: #af1200;
+  --primary-h: 208;
+  --primary-s: 90%;
+  --primary-l: 30%;
+  --hover-brighten: 1.1;
+  --focus-opacity: 0.4;
+  --primary-hover-l: calc(var(--primary-l) * var(--hover-brighten));
+  --success-h: calc(var(--primary-h) - 90);
+  --success-l: calc(var(--primary-l));
+  --success-hover-l: calc(var(--success-l) * var(--hover-brighten));
+  --warning-h: calc(var(--primary-h) - 160);
+  --warning-l: calc(var(--primary-l) + 18%);
+  --warning-hover-l: calc(var(--warning-l) * var(--hover-brighten));
+  --danger-h: calc(var(--primary-h) + 140);
+  --danger-l: calc(var(--primary-l) + 10%);
+  --danger-hover-l: calc(var(--danger-l) * var(--hover-brighten));
+  --primary: hsl(var(--primary-h),
+                 var(--primary-s),
+                 var(--primary-l));
+  --primary-hover: hsl(var(--primary-h),
+                       var(--primary-s),
+                       var(--primary-hover-l));
+  --primary-focus: hsla(var(--primary-h),
+                        var(--primary-s),
+                        var(--primary-l),
+                        var(--focus-opacity));
+  --primary-dark: hsl(var(--primary-h),
+                      var(--primary-s),
+                      calc(var(--primary-l) * 0.7));
+  --primary-very-dark: hsl(var(--primary-h),
+                           var(--primary-s),
+                           calc(var(--primary-l) * 0.35));
+  --success: hsl(var(--success-h),
+                 var(--primary-s),
+                 var(--success-l));
+  --success-hover: hsl(var(--success-h),
+                       var(--primary-s),
+                       var(--success-hover-l));
+  --success-focus: hsla(var(--success-h),
+                        var(--primary-s),
+                        var(--success-l),
+                        var(--focus-opacity));
+  --warning: hsl(var(--warning-h),
+                 var(--primary-s),
+                 var(--warning-l));
+  --warning-hover: hsl(var(--warning-h),
+                           var(--primary-s),
+                           var(--warning-hover-l));
+  --warning-focus: hsla(var(--warning-h),
+                        var(--primary-s),
+                        var(--warning-l),
+                        var(--focus-opacity));
+  --danger: hsl(var(--danger-h),
+                var(--primary-s),
+                var(--danger-l));
+  --danger-hover: hsl(var(--danger-h),
+                      var(--primary-s),
+                      var(--danger-hover-l));
+  --danger-focus: hsla(var(--danger-h),
+                       var(--primary-s),
+                       var(--danger-l),
+                       var(--focus-opacity));
+  --mistake-color: var(--danger);
+  --mistake-color-alt: var(--danger-hover);
   --good-color: #007000;
   --move-color: #002090;
   --move-color-alt: #001070;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover) !important;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 .2rem var(--primary-focus);
+}
+
+.btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.btn-success:hover {
+  background-color: var(--success-hover);
+  border-color: var(--success-hover);
+}
+
+.btn-success:focus, .btn-success.focus {
+  box-shadow: 0 0 0 .2rem var(--success-focus);
+}
+
+.btn-warning {
+  background-color: var(--warning);
+  border-color: var(--warning);
+}
+
+.btn-warning:hover {
+  background-color: var(--warning-hover);
+  border-color: var(--warning-hover);
+}
+
+.btn-warning:focus, .btn-warning.focus {
+  box-shadow: 0 0 0 .2rem var(--warning-focus);
+}
+
+
+.btn-danger {
+  background-color: var(--danger);
+  border-color: var(--danger);
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+  border-color: var(--danger-hover);
+}
+
+.btn-danger:focus, .btn-danger.focus {
+  box-shadow: 0 0 0 .2rem var(--danger-focus);
 }
 
 html,
@@ -263,16 +381,16 @@ a, .btn-link {
 #header .modal .btn-link,
 .card .btn-link,
 .link {
-  color: #002f90;
+  color: var(--primary);
 }
 
-.modal a:active,
-.card a:active,
-.modal .btn-link:active,
-#header .modal .btn-link:active,
-.card .btn-link:active,
-.link:active {
-  color: #001f70;
+.modal a:hover,
+.card a:hover,
+.modal .btn-link:hover,
+#header .modal .btn-link:hover,
+.card .btn-link:hover,
+.link:hover {
+  color: var(--primary-hover);
 }
 
 
@@ -291,7 +409,7 @@ a, .btn-link {
 }
 
 #game-header {
-  background-color: #000c30;
+  background-color: var(--primary-very-dark);
 }
 
 .download-review-button {
@@ -396,7 +514,7 @@ a, .btn-link {
   user-select: none;
 }
 
-.mistakes select, .katago-settings select {
+.mistakes select, .katago-settings select, .quiz-settings select {
   background-color: rgba(177, 178, 212, 0.37);
   font-weight: bold;
 }
@@ -488,7 +606,7 @@ header {
 }
 
 #header .login-bar-wrapper {
-  background-color: #055b92;
+  background-color: var(--primary);
 }
 
 header .logo {
@@ -511,7 +629,7 @@ header hr {
 }
 
 #header .nav-bar-wrapper {
-  background-color: #012d55;
+  background-color: var(--primary-dark);
   font-size: 1rem;
 }
 
@@ -682,41 +800,70 @@ img.white-black {
 }
 
 .nav-control {
-  margin: -1rem -0.8rem;
+  margin: -1rem 0;
+  flex-basis: 5rem;
+}
+
+.nav-control.nav-close-button {
+  flex-basis: 2rem;
+}
+
+.close-button-spacer {
+  flex-basis: 3rem;
+  flex-shrink: 3;
 }
 
 .controls i {
   font-size: 3.6rem !important;
 }
 
-
 .library-icon {
   color: #eedcb0;
 }
 
-.inline-library-button {
-  margin: 0 0.5rem 0 0.5rem;
-  padding: 0.3rem 0.3rem 0 0.3rem;
+.button-row button {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
-i.library-icon {
-  font-size: 1.7rem !important;
+button i.icon-previous_mistake, button i.icon-next_mistake {
+  font-size: 1.6rem;
 }
 
-.library-button i.fa-minus,
-.library-button i.fa-plus
-{
-  font-size: 0.8rem !important;
-  padding-left: 6px;
-  margin-right: -0.7rem;
+.trial-board-icon {
+  font-size: 1.2rem;
+  color: #e89b28;
 }
 
-.size-xs .library-button i.fa-minus,
-.size-xs .library-button i.fa-plus
-{
-  margin-right: 0;
+.quiz-next-game-icon, .quiz-prev-game-icon {
+  font-size: 1.2rem;
+  color: #5d87bd;
 }
 
+.finish-quiz-icon {
+  color: #a3adbb;
+}
+
+.start-quiz-icon {
+  color: #398fdb;
+}
+
+.problem-dropdown-menu {
+  padding: 0;
+}
+
+.problem-dropdown-menu, .dropdown-item:focus {
+  color: white;
+  background-color: var(--primary);
+}
+
+.problem-dropdown-menu .dropdown-item {
+  color: white;
+}
+
+.problem-dropdown-menu .dropdown-item:hover {
+  background-color: var(--primary-hover);
+}
 
 .add-library-icon {
   color: #47f922;
@@ -726,20 +873,13 @@ i.library-icon {
   color: var(--mistake-color);
 }
 
-.controls-row {
-  margin: 0 0;
+.bulk-add-problems-icon, .delete-game-problems-icon {
+  margin: 0.1rem 0.5rem 0 -0.3rem;
 }
 
-.size-sm .controls-row {
-  margin: -0.5rem 0;
-}
-
-.size-xs .controls-row {
-  margin: -0.5rem -1rem -0.5rem;
-}
-
-.controls .link:active i::before {
-  margin-top: 4px;
+.edit-problem-icon {
+  margin: 0rem 0rem 0rem -0.6rem;
+  color: yellow;
 }
 
 .controls .icon-to_end_of_game, .controls .icon-rewind_to_start {
@@ -756,14 +896,21 @@ i.library-icon {
   padding-left: 0.2rem;
 }
 
-.navigate-previous-mistake, .navigate-next-mistake {
+.nav-control:not(.disabled) .red-icon {
   color: var(--mistake-color) !important;
 }
 
-.navigate-previous-mistake:active, .navigate-next-mistake:active {
+.nav-control:not(.disabled) .red-icon:hover {
   color: var(--mistake-color-alt) !important;
 }
 
+.controls i.quiz-navigation {
+  font-size: 2.5rem !important;
+}
+
+.controls i.close-icon {
+  font-size: 2.5rem !important;
+}
 
 .controls .disabled {
   color: #626b78 !important;

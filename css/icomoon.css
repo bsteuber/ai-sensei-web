@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gjhu4p');
-  src:  url('fonts/icomoon.eot?gjhu4p#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gjhu4p') format('truetype'),
-    url('fonts/icomoon.woff?gjhu4p') format('woff'),
-    url('fonts/icomoon.svg?gjhu4p#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?hod9zg');
+  src:  url('fonts/icomoon.eot?hod9zg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hod9zg') format('truetype'),
+    url('fonts/icomoon.woff?hod9zg') format('woff'),
+    url('fonts/icomoon.svg?hod9zg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,9 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-edit:before {
-  content: "\e91c";
-}
 .icon-autoplay:before {
   content: "\e900";
 }
@@ -48,72 +46,78 @@
 .icon-download:before {
   content: "\e906";
 }
-.icon-full_screen:before {
+.icon-edit:before {
   content: "\e907";
 }
-.icon-log_in:before {
+.icon-full_screen:before {
   content: "\e908";
 }
-.icon-logo:before {
+.icon-log_in:before {
   content: "\e909";
 }
-.icon-log_out:before {
+.icon-logo:before {
   content: "\e90a";
 }
-.icon-next_mistake:before {
+.icon-log_out:before {
   content: "\e90b";
 }
-.icon-next_move:before {
+.icon-next_mistake:before {
   content: "\e90c";
 }
-.icon-next_move_open:before {
+.icon-next_move:before {
   content: "\e90d";
 }
-.icon-one_credit:before {
+.icon-next_move_open:before {
   content: "\e90e";
 }
-.icon-page_back:before {
+.icon-one_credit:before {
   content: "\e90f";
 }
-.icon-pause:before {
+.icon-page_back:before {
   content: "\e910";
 }
-.icon-previous_mistake:before {
+.icon-pause:before {
   content: "\e911";
 }
-.icon-previous_move:before {
+.icon-previous_mistake:before {
   content: "\e912";
 }
-.icon-previous_move_open:before {
+.icon-previous_move:before {
   content: "\e913";
 }
-.icon-reviews:before {
+.icon-previous_move_open:before {
   content: "\e914";
 }
-.icon-rewind_to_start:before {
+.icon-reviews:before {
   content: "\e915";
 }
-.icon-rezise_screen:before {
+.icon-rewind_to_start:before {
   content: "\e916";
 }
-.icon-star_full:before {
+.icon-rezise_screen:before {
   content: "\e917";
 }
-.icon-star_open:before {
+.icon-star_full:before {
   content: "\e918";
 }
-.icon-start_over:before {
+.icon-star_open:before {
   content: "\e919";
 }
-.icon-to_end_of_game:before {
+.icon-start_over:before {
   content: "\e91a";
 }
-.icon-tray:before {
+.icon-to_end_of_game:before {
   content: "\e91b";
 }
-.icon-upload:before {
+.icon-tray:before {
+  content: "\e91c";
+}
+.icon-trial_board:before {
   content: "\e91e";
 }
-.icon-white_black:before {
+.icon-upload:before {
   content: "\e91f";
+}
+.icon-white_black:before {
+  content: "\e920";
 }

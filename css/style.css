@@ -504,6 +504,13 @@ a:hover, .btn-link:hover, .link:hover {
   user-select: none;
 }
 
+@media print {
+  .board-background {
+    background-color: white;
+    background-image: none !important;
+  }
+}
+
 .mistakes select, .katago-settings select, .quiz-settings select {
   background-color: rgba(177, 178, 212, 0.37);
   font-weight: bold;

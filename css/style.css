@@ -81,7 +81,7 @@
   --move-color-alt: #001070;
 }
 
-.btn-primary {
+.btn-primary, .btn-primary.disabled {
   background-color: var(--primary);
   border-color: var(--primary);
 }
@@ -881,6 +881,10 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 .edit-problem-icon {
   margin: 0rem 0rem 0rem -0.6rem;
   color: yellow;
+}
+
+.pass-icon {
+  color: #ec9a72;
 }
 
 .controls .icon-to_end_of_game, .controls .icon-rewind_to_start {

@@ -504,10 +504,21 @@ a:hover, .btn-link:hover, .link:hover {
   user-select: none;
 }
 
+.printonly {
+  display: none;
+}
+
 @media print {
   .board-background {
-    background-color: white;
     background-image: none !important;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .printonly {
+    display: initial;
   }
 }
 
@@ -1324,6 +1335,16 @@ circle.ownership.diff.white { stroke: white; }
 .board-label.black{
   fill: #FFF;
   stroke: #FFF;
+}
+
+@media print {
+  .board-label.black{
+    stroke: #000;
+  }
+
+  .board-label.white{
+    stroke: #FFF;
+  }
 }
 
 .board-label.mistake {

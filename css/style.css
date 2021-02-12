@@ -808,17 +808,18 @@ img.white-black {
 }
 
 .nav-control {
-  margin: -1rem -0.8rem;
-  flex-basis: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-basis: 5rem;
 }
 
 .nav-control.nav-close-button {
-  flex-basis: 3.5rem;
+  justify-content: start;
 }
 
 .close-button-spacer {
-  flex-basis: 3rem;
-  flex-shrink: 3;
+  flex-basis: 5rem;
+  flex-shrink: 5;
 }
 
 .controls {
@@ -827,6 +828,10 @@ img.white-black {
 
 .controls i {
   font-size: 3.6rem !important;
+}
+
+.controls i.delete-variation-icon {
+  font-size: 3rem !important;
 }
 
 .library-icon {
@@ -896,6 +901,14 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .pass-icon {
   color: #ec9a72;
+}
+
+.start-live-mode-icon {
+  color: #22d022;
+}
+
+.stop-live-mode-icon {
+  color: #ec4141;
 }
 
 .controls .icon-to_end_of_game, .controls .icon-rewind_to_start {
@@ -1318,6 +1331,25 @@ input:focus + .slider {
 }
 
 /* Board svg */
+
+circle.stone-circle {
+  stroke-width: 1;
+  stroke: black;
+
+}
+
+circle.stone-circle.black {
+  fill: black;
+}
+
+circle.stone-circle.white {
+  fill: white;
+}
+
+circle.stone-circle.highlight {
+  stroke-width: 2;
+  stroke: #ff9e49;
+}
 
 circle.ownership.diff.pos { fill: #22dd33; }
 circle.ownership.diff.neg { fill: #dd1122; }

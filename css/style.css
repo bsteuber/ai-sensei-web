@@ -1421,10 +1421,10 @@ g.lines line {
   stroke: #cccab2;
   stroke-width: 1px;
   vector-effect: non-scaling-stroke;
-};
+}
 
 .popover-body {
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0, 0.5);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0,0,0, 0.8);
 }
 
 .tutorial-wrapper, .tutorial-wrapper h3 {

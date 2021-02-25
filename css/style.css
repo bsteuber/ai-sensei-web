@@ -944,13 +944,6 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   color: #626b78 !important;
 }
 
-
-.worst-moves {
-  max-height: 28.125rem;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 .worst-moves .mistake-info-row {
   padding-top: 0.3125rem;
   margin-bottom: 0.3125rem;
@@ -1423,7 +1416,7 @@ g.lines line {
   vector-effect: non-scaling-stroke;
 }
 
-.popover-body {
+.card.popover-overlay {
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0,0,0, 0.8);
 }
 

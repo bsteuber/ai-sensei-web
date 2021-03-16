@@ -309,10 +309,8 @@ a:focus {
   border: none;
 }
 
-.faq .content.highlight {
+.faq .faq-item.highlight {
   background-color: #fff5;
-  padding: 1.0rem;
-  margin: 0 -1.0rem;
 }
 
 .faq .toc .highlight {

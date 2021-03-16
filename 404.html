@@ -29,7 +29,7 @@
     <link href="/css/icomoon.css" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/3.1.0/firebase-ui-auth.css" />
   </head>
-  <body>
+  <body style="background: rgba(0, 0, 0, 0) url('/img/background.png') no-repeat fixed center bottom; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover;">
 
     <noscript>
       <div class="d-flex flex-column justify-content-center"
@@ -73,7 +73,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <div id="app"></div>
+    <div id="app">
+      <!-- This might get filled by script -->
+    </div>
+    <div id="loader"></div>
     <script src="/js/sensei_env.js"></script>
     <script src="/js/compiled/frontend.js"></script>
   </body>

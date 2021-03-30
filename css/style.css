@@ -888,6 +888,10 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   color: #47f922;
 }
 
+.replace-library-icon {
+  color: var(--warning);
+}
+
 .remove-library-icon {
   color: var(--mistake-color);
 }

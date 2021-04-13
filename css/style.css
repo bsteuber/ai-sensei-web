@@ -202,6 +202,11 @@ body {
   padding-bottom: 10rem;   /* padding + height of the footer */
 }
 
+#content.fullscreen {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 #game {
   margin-top: -1rem;
 }
@@ -1563,6 +1568,11 @@ g.lines line {
 
 .c3-xgrid-line.chart-marketing-event text {
   fill: rgba(157, 51, 10, 0.87);
+  pointer-events: none;
+}
+
+g .c3-line {
+   stroke-width: 2px;
 }
 
 .problem-stats .times {

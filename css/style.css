@@ -1571,7 +1571,11 @@ g.lines line {
   pointer-events: none;
 }
 
-g .c3-line {
+.chart {
+  background-color: #f6f3f0ff;
+}
+
+.chart g .c3-line {
    stroke-width: 2px;
 }
 

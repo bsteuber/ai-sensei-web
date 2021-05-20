@@ -987,7 +987,15 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 #score-graph g.highlight.mistake,
 #score-graph g.highlight.mistake rect  {
-  fill: var(--mistake-color);
+  fill: #c42c2c;
+}
+
+#score-graph rect.black-mistake{
+  fill: #db4141;
+}
+
+#score-graph rect.white-mistake{
+  fill: #c41717;
 }
 
 #score-graph g.highlight.mistake text {
@@ -1382,7 +1390,12 @@ circle.ownership.diff.white { stroke: white; }
   }
 }
 
-.board-label.mistake {
+.board-label.black-mistake {
+  fill: #ff0000;
+  stroke: #f78181;
+}
+
+.board-label.white-mistake {
   fill: #ff0000;
   stroke: #ff0000;
 }

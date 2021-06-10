@@ -413,6 +413,10 @@ a:hover, .btn-link:hover, .link:hover {
   background-color: var(--primary-very-dark);
 }
 
+.cheater-stats-button {
+  color: #d2b06f;
+}
+
 .download-review-button {
   color: #68b5e2;
 }

@@ -395,6 +395,14 @@ a:hover, .btn-link:hover, .link:hover {
 }
 
 
+.auth-bar-link {
+  border-radius: 3px;
+}
+
+.auth-bar-link:hover {
+  background-color: #ffffff40;
+}
+
 .credits {
   color: #d6c939;
 }
@@ -411,6 +419,17 @@ a:hover, .btn-link:hover, .link:hover {
 
 #game-header {
   background-color: var(--primary-very-dark);
+}
+
+.game-header-icon {
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.game-header-icon:hover {
+  background-color: #f7f7f745;
 }
 
 .cheater-stats-button {
@@ -433,14 +452,6 @@ a:hover, .btn-link:hover, .link:hover {
 .fullscreen-button:before {
   font-size: 2.3rem;
   color: #22abe4;
-}
-
-.game-info-button {
-  margin-top: 7rem;
-  vertical-align: top;
-  font-size: 1.5rem;
-  user-select: none;
-  line-height: 2rem;
 }
 
 .game-info-button .fg, .game-info-button .bg {
@@ -834,7 +845,7 @@ img.white-black {
 }
 
 .controls {
-  height: 3rem;
+  height: 1.5rem;
 }
 
 .controls i {
@@ -936,6 +947,14 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .controls .navigate-quiz-mode i {
   font-size: 1.4rem !important;
+}
+
+.nav-control .nav-control-box {
+  border-radius: 3px;
+}
+
+.nav-control:not(.disabled) .nav-control-box:hover {
+  background-color: #00000026;
 }
 
 .nav-control:not(.disabled) .red-icon {
@@ -1082,7 +1101,7 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   margin-right: -0.8rem;
 }
 
-.news-editor textarea#content {
+.news-editor textarea.editor-content {
   padding: 0;
   height: 15rem;
 }
@@ -1097,6 +1116,11 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   padding: 0.1rem 0.5rem 0.1rem 0.5rem;
 }
 
+.news-editor .editor-errors {
+  color: var(--danger);
+  padding-left: 0;
+}
+
 .news-content pre {
   white-space: pre-wrap;
 }
@@ -1104,6 +1128,22 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 img.article-image {
   max-width: 100%;
   max-height: 80rem;
+}
+
+.news-list {
+  font-size: 1.25rem;
+  max-width: 75ex;
+}
+
+.news-list h5 a {
+  color: #224;
+  font-size: 1.4em;
+}
+
+.news-list .card-body {
+  margin: 0.5em;
+  padding: 1em;
+  padding-top: 0.3em;
 }
 
 .news-content img,

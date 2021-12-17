@@ -38,7 +38,7 @@
   content: "\e903";
 }
 .icon-black_white:before {
-  content: "\e904";
+  content: var(--black-white-icon);
 }
 .icon-credits:before {
   content: "\e905";
@@ -119,5 +119,5 @@
   content: "\e91f";
 }
 .icon-white_black:before {
-  content: "\e920";
+  content: var(--white-black-icon);
 }

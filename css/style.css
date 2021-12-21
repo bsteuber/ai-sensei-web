@@ -1029,7 +1029,7 @@ a.highlight {
   }
 
   .noprint {
-    display: none;
+    display: none !important;
   }
 
   .printonly {

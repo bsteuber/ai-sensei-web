@@ -338,6 +338,7 @@ body, #game.fullscreen {
 
 .nav-small #content {
   padding-top: 4.8rem;
+  padding-bottom: 6rem; /* workaround for mobile bottom address bar bug */
 }
 
 .nav-small.training-page #content {
@@ -1887,7 +1888,12 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 
 .error {
-  color: white;
+  max-width: 80em;
+  min-width: 30em;
+  background-color: rgba(255,40, 0, 0.2);
+  border: 3px solid rgba(0,0,0,0.8);
+  padding: 1em;
+  margin-top: 3em;
 }
 
 .credits-amount {

@@ -2843,6 +2843,12 @@ a.post-card {
   font-size: 1.3rem;
 }
 
+.life-time-value-page .table-bordered th,
+.life-time-value-page .table-bordered td {
+    border: 1px solid #bbb;
+}
+
+
 :root {
   --icon-fill-color: #009f2f;
   --icon-stroke-color: #0c4e01;

@@ -2387,6 +2387,15 @@ circle.ownership.diff.white { stroke: white; }
   filter: drop-shadow(1px 1px 2px rgba(0,0,0,.6));
 }
 
+.hide-suggestion-dots .with-category .move-category {
+  display: none;
+}
+
+.hide-suggestion-dots .with-circle.with-category .move-category {
+  display: block;
+}
+
+
 .black-stone .move-category, .white-stone .move-category {
   filter: none;
 }

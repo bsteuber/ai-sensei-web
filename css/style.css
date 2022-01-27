@@ -328,7 +328,7 @@ body, #game.fullscreen {
   font-family: prompt, sans-serif;
 }
 
-#content-wrapper:not(.game-page):not(.training-page) {
+#content-wrapper:not(.game-page):not(.training-page):not(.play-ai-game-page) {
   overflow-y: scroll;
 }
 
@@ -341,11 +341,14 @@ body, #game.fullscreen {
   padding-bottom: 6rem; /* workaround for mobile bottom address bar bug */
 }
 
-.nav-small.training-page #content {
+.nav-small.training-page #content, .nav-small.play-ai-game-page #content {
   padding-top: 3.8rem;
 }
 
-.fullscreen #content, .game-page #content, .training-page #content {
+.fullscreen #content,
+.game-page #content,
+.training-page #content,
+.play-ai-game-page #content {
   padding-top: 0;
 }
 
@@ -1665,7 +1668,7 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
   color: #398fdb;
 }
 
-.analysis-game-row, .trial-game-row {
+.analysis-game-row, .trial-game-row, play-ai-game-row {
   margin: -1rem 0 -0.3rem;
 }
 

@@ -2922,6 +2922,70 @@ a.post-card {
   animation-fill-mode: both;
 }
 
+/* css table stuff */
+
+.css-table {
+  display: table;
+  border-collapse: collapse;
+  margin: 0.8rem;
+  height: 100%;
+}
+
+.css-table .tr {
+  display: table-row;
+}
+
+.css-table .td, .css-table .th {
+  display: table-cell;
+  padding: 0.2rem 1rem;
+  border: 1px solid rgba(0,0,0,.20);
+  width: 5rem;
+}
+
+.css-table .td {
+  padding: 0.2rem;
+  height: 100%;
+  vertical-align: top;
+}
+
+.css-table .td > div {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.css-table .thead .th {
+  font-size: 120%;
+  font-weight: bold;
+  height: 10rem;
+  position: relative;
+  border: none;
+}
+
+.css-table .thead .th .rotate {
+  transform: rotate(-30deg);
+  white-space: nowrap;
+  text-overflow: ellipses;
+  display: block;
+  bottom: 0;
+  left: 2rem;
+  width: 1rem;
+  height: 2rem;
+  position: absolute;
+}
+
+.worker-table .clickable-job {
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+.worker-table .clickable-job:hover {
+  background-color: #00000030
+}
+
+
+
+
 
 /* Slider CSS
 generated from http://danielstern.ca/range.css/?ref=css-tricks#/

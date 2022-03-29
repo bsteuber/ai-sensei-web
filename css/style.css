@@ -840,11 +840,13 @@ hr.showcase-line {
 }
 
 .drop-shadow {
-  filter: drop-shadow(2px 3px 2px rgba(0,0,0,0.3));
+  filter: drop-shadow(0.125rem 0.188rem 0.25rem rgba(0,0,0,0.3));
+  -webkit-transform: translate3d(0,0,0);
 }
 
 .large-drop-shadow {
-  filter: drop-shadow(3px 4px 2px rgba(0,0,0,0.3));
+  filter: drop-shadow(0.188rem 0.25rem 0.125rem rgba(0,0,0,0.3));
+  -webkit-transform: translate3d(0,0,0);
 }
 
 a, .btn-link {
@@ -2320,12 +2322,12 @@ input:focus + .slider {
 
 
 .stone-shadow {
-  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.5));
+  filter: url("#shadow");
 }
 
 .hover-ghost {
   opacity: 0.5;
-  filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.9));
+  filter: url("#shadow");
 }
 
 circle.circle-label.hidden {

@@ -1953,6 +1953,7 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .news-read-more {
   position: absolute;
+  pointer-events: none;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1966,6 +1967,7 @@ button i.icon-previous_mistake, button i.icon-next_mistake {
 
 .news-read-more-button-wrapper {
   background-color: var(--card-bg);
+  pointer-events: auto;
 }
 
 .news-read-more-button-wrapper button.btn {

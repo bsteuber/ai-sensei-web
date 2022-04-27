@@ -2223,6 +2223,20 @@ rect.white-errors {
   color: black;
 }
 
+.accept-cookie-overlay.signed-in {
+  background-color: #df531c;
+}
+
+.accept-cookie-overlay .btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.accept-cookie-overlay.signed-in .btn-outline-secondary {
+  color: #2b2d30;
+  border-color: #2b2d30;
+}
+
 .new-slider {
   position: relative;
   border-radius: 0.8rem;

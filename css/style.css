@@ -2655,6 +2655,10 @@ path.check-mark {
   color: #333;
 }
 
+.badge-free {
+  background-color: white;
+}
+
 .plan-card {
   border: 2px solid #060d82;
 }

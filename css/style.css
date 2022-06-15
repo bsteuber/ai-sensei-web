@@ -1593,6 +1593,8 @@ img.white-black {
   color: var(--card-fg);
   font-size: 1.3rem;
   margin-left: 1.2rem;
+  padding: 0rem 0.4rem;
+  border-radius: 3px;
 }
 
 .game-list-menu-toggle {
@@ -1605,7 +1607,7 @@ img.white-black {
   padding: 0.2rem;
 }
 
-.game-list-menu-toggle:hover {
+.game-list-menu-toggle:hover, .sidebar-menu-toggle:hover {
   background-color: var(--page-hover-bg);
 }
 

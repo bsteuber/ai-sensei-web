@@ -2088,6 +2088,7 @@ img.article-image {
 
 .overlay-no-wrapper {
   position: absolute;
+  z-index: 3;
 }
 
 .modal-wrapper.hide-modal {

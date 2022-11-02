@@ -706,6 +706,11 @@ body, #game.fullscreen {
     padding: 0 1rem;
   }
 
+  .landing-nav .container {
+    margin: 0rem 1.5rem;
+    padding: 0;
+  }
+
   .landing-title {
     font-size: 2.2rem;
   }
@@ -722,6 +727,11 @@ body, #game.fullscreen {
 
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+  .main-nav-toggle {
+    margin-left: 0.3rem !important;
+  }
+
   .landing-title {
     font-size: 2.2rem;
   }
@@ -738,6 +748,10 @@ body, #game.fullscreen {
 
 /* lg */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .main-nav-toggle {
+    margin-left: 0.3rem !important;
+  }
 
   .landing-banner {
     margin-top: 3rem;
@@ -759,6 +773,7 @@ body, #game.fullscreen {
 
 /* xl */
 @media (min-width: 1200px) {
+
   .landing-banner {
     margin-top: 7rem;
   }
@@ -1021,7 +1036,18 @@ a.highlight {
   color: #967146;
 }
 
-#content .card, .bg-blue, .bg-blue-opaque {
+#content .card {
+  background-color: var(--card-bg);
+  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
+  border: none;
+  border-radius: 0;
+}
+
+#content .card.not-first {
+  clip-path: inset(0px -16px -16px -16px);
+}
+
+#content .bg-blue, .bg-blue-opaque {
   background-color: var(--card-bg);
 }
 
@@ -1304,7 +1330,7 @@ input.form-control-file {
   color: var(--nav-fg);
   font-size: 1.3rem;
   margin-left: 1.7rem;
-  margin-right: 1.8rem;
+  margin-right: .3rem;
   padding: 0 0.5rem;
 }
 

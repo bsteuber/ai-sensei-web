@@ -6,8 +6,24 @@ self.addEventListener('message', (event) => {
   }
 });
 
-self.addEventListener('install', (event) => {});
+self.addEventListener('install', (event) => {
+  self.skipWaiting();
+});
 
 self.addEventListener('fetch', function(event) {
-  event.respondWith(fetch(event.request));
+  const url = new URL(event.request.url);
+
+  if (event.request.method === 'POST' && url.pathname === '/pwa-share-data') {
+    event.respondWith((async () => {
+      const formData = await event.request.formData();
+      const file = formData.get('sgf');
+      if (file) {
+        const text = await file.text();
+        return Response.redirect("/upload?sgf=" + encodeURIComponent(text), 303);
+      }
+      return Response.redirect("/", 303);
+    })());
+  } else {
+    event.respondWith(fetch(event.request));
+  }
 });

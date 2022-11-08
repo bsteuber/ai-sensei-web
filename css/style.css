@@ -745,7 +745,7 @@ body,
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
 
-  .main-nav-toggle {
+  .hidden .main-nav-toggle {
     margin-left: 0.3rem !important;
   }
 
@@ -766,8 +766,8 @@ body,
 /* lg */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-  .main-nav-toggle {
-    margin-left: 0.3rem !important;
+  .hidden .main-nav-toggle {
+      margin-left: 0.3rem !important;
   }
 
   .landing-banner {
@@ -790,6 +790,10 @@ body,
 
 /* xl */
 @media (min-width: 1200px) {
+
+  .hidden .main-nav-toggle {
+      margin-left: 0.3rem !important;
+  }
 
   .landing-banner {
     margin-top: 7rem;

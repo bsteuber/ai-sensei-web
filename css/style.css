@@ -767,7 +767,7 @@ body,
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
   .hidden .main-nav-toggle {
-      margin-left: 0.3rem !important;
+    margin-left: 0.3rem !important;
   }
 
   .landing-banner {
@@ -792,7 +792,7 @@ body,
 @media (min-width: 1200px) {
 
   .hidden .main-nav-toggle {
-      margin-left: 0.3rem !important;
+    margin-left: 0.3rem !important;
   }
 
   .landing-banner {
@@ -3170,6 +3170,14 @@ comment-body h7 {
 .c3-xgrid-line.chart-marketing-event text {
   fill: rgba(157, 51, 10, 0.87);
   pointer-events: none;
+}
+
+.c3-grid .max-allowed-time>line {
+  stroke: rgb(122, 121, 121);
+}
+
+.c3-grid .max-allowed-time>text {
+  fill: rgb(24, 24, 24);
 }
 
 .chart {

@@ -3173,11 +3173,11 @@ comment-body h7 {
 }
 
 .c3-grid .max-allowed-time>line {
-  stroke: rgb(122, 121, 121);
+  stroke: rgb(165, 2, 2);
 }
 
 .c3-grid .max-allowed-time>text {
-  fill: rgb(24, 24, 24);
+  fill: rgb(165, 2, 2);
 }
 
 .chart {

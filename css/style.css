@@ -189,6 +189,10 @@ hr {
   opacity: 0.1;
 }
 
+.outline {
+  outline: 1px solid blue;
+}
+
 .game-sidebar .btn-primary {
   background-color: var(--nav-bg);
   color: var(--nav-fg);
@@ -889,6 +893,16 @@ body,
   margin-right: -0.5rem;
 }
 
+.game-list-table {
+  width: 100%;
+}
+
+.game-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
 .search-box input {
   border-right-color: transparent;
 }
@@ -1567,7 +1581,6 @@ a.game-link {
 }
 
 .game-cell {
-  margin-bottom: 1.6rem;
   background-color: var(--page-bg);
   filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
 }
@@ -1605,11 +1618,11 @@ a.game-link {
 }
 
 .game-link-info-players {
-  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .game-link-info-tags {
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   height: 3rem;
   overflow-y: auto;
 }
@@ -1783,6 +1796,7 @@ img.white-black {
 .sidebar-menu-label,
 .nav-control-label {
   margin-top: 0.1rem;
+  height: 1em;
 }
 
 .expert-mode .sidebar-menu-label,
@@ -2641,6 +2655,15 @@ circle.ownership.diff.white {
 
 .move-category {
   display: none;
+}
+
+.ai-disabled .move-category,
+.ai-disabled .hide-on-ai-disabled {
+  display: none !important;
+}
+
+.easy-mode .hide-on-easy-mode {
+  display: none !important;
 }
 
 .with-category .move-category {

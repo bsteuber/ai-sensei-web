@@ -2573,16 +2573,9 @@ input:focus+.slider {
   transform: translateX(17px);
 }
 
-/* Board svg */
-
-
-.stone-shadow {
-  filter: url("#shadow");
-}
 
 .hover-ghost {
   opacity: 0.5;
-  filter: url("#shadow");
 }
 
 circle.circle-label.hidden {

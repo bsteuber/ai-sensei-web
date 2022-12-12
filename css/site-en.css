@@ -1,0 +1,43 @@
+/* Typography */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/css/fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        url('/css/fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('/css/fonts/roboto-v30-latin-500.woff2') format('woff2'),
+        url('/css/fonts/roboto-v30-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/css/fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('/css/fonts/roboto-v30-latin-700.woff') format('woff');
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Navigation */
+
+.logo-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.main-nav .nav-row {
+    font-weight: 500;
+}

@@ -1,0 +1,16 @@
+/* Highlight badges */
+
+[data-highlight] {
+  position: relative;
+}
+
+[data-highlight]::after {
+  content: attr(data-highlight);
+  position: absolute;
+  right: -0.7rem;
+  top: 0;
+  font-size: 0.7rem;
+  background: red;
+  border-radius: 50%;
+  padding: 0 0.3rem;
+}

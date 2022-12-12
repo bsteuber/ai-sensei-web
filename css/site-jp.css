@@ -1,0 +1,37 @@
+/* Typography */
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/css/fonts/NotoSansJP-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('/css/fonts/NotoSansJP-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/css/fonts/NotoSansJP-Bold.otf') format('opentype');
+}
+
+body {
+    font-family: Noto Sans JP;
+}
+
+/* Navigation */
+
+.logo-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: -0.3rem;
+}

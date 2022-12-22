@@ -432,37 +432,6 @@ body,
   color: #555;
 }
 
-.load-screen-wrapper {
-  margin-top: -1rem;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#content .card.load-screen-card {
-  background-color: var(--nav-bg);
-  border: 1px solid var(--nav-fg);
-  font-size: 3rem;
-  color: white;
-  text-align: center;
-  width: 65rem;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-}
-
-#content .card.load-screen-card .card-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#content .card.load-screen-card img {
-  width: 90px;
-}
-
 #landing-page {
   margin-top: -4rem;
   padding-top: 4rem;
@@ -482,6 +451,10 @@ body,
   padding-top: 1rem;
   background-color: white;
   z-index: 10;
+}
+
+.landing-nav h3 {
+  font-weight: 700;
 }
 
 .landing-nav a:hover {
@@ -683,10 +656,6 @@ body,
 
   .load-screen-wrapper {
     padding-top: 3.8rem;
-  }
-
-  #content .card.load-screen-card {
-    font-size: 2rem;
   }
 }
 
@@ -1046,23 +1015,23 @@ a.highlight {
   color: #967146;
 }
 
-#content .card {
+.card {
   background-color: var(--card-bg);
   filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
   border: none;
   border-radius: 0;
 }
 
-#content .card.not-first {
+.card.not-first {
   clip-path: inset(0px -16px -16px -16px);
 }
 
-#content .bg-blue,
+.bg-blue,
 .bg-blue-opaque {
   background-color: var(--card-bg);
 }
 
-#content .no-blue .card {
+.no-blue .card {
   background-color: white;
 }
 
@@ -1352,7 +1321,7 @@ input.form-control-file {
   background-color: var(--nav-hover-bg);
 }
 
-#content .landing-nav h3 {
+.landing-nav h3 {
   color: black !important;
 }
 
@@ -1469,8 +1438,8 @@ input.form-control-file {
   width: 2rem;
 }
 
-#content .card.discuss,
-#content .card.post-card {
+.card.discuss,
+.card.post-card {
   background-color: var(--card-bg);
 }
 
@@ -2226,7 +2195,7 @@ img.article-image {
   display: inline-block;
 }
 
-#content .dropdown-content .card {
+.dropdown-content .card {
   background-color: white !important;
   color: black;
   max-height: 95vh;
@@ -3637,4 +3606,13 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
 
 .equal-columns>* {
   flex: 1;
+}
+
+.firebaseui-container {
+  max-width: 460px;
+}
+
+.firebaseui-idp-button,
+.firebaseui-tenant-button {
+  max-width: 260px;
 }

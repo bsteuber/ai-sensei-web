@@ -1,3 +1,42 @@
+/* Variables */
+
+:root {
+  --color-accent: hsl(223, 25%, 22%);
+  --color-accent-hover: hsl(223, 25%, 30%);
+  --color-accent-text: white;
+}
+
+/* Layout */
+
+.my-wrapper {
+  padding: 0 0 1rem;
+}
+
+.my-container {
+  width: 90%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.my-btn {
+  background-color: var(--color-accent);
+  border: none;
+  color: var(--color-accent-text);
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.my-btn:hover {
+  background-color: var(--color-accent-hover);
+}
+
 /* Highlight badges */
 
 [data-highlight] {
@@ -11,6 +50,137 @@
   top: 0;
   font-size: 0.7rem;
   background: red;
+  color: white;
   border-radius: 100px;
   padding: 0 0.3rem;
+}
+
+/* Spinner */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.my-spinner {
+  display: inline-block;
+  animation: rotation 1.5s infinite linear;
+  aspect-ratio: 1/1;
+  width: 1.4em;
+  margin: 0.6em;
+  background-size: cover;
+}
+
+.my-spinner.dark {
+  background-image: url(/img/spinner-dark.png);
+}
+
+.my-spinner.light {
+  background-image: url(/img/spinner-light.png);
+}
+
+.button-spinner {
+  margin: 0;
+}
+
+/* PAGES */
+
+/* Load Screen */
+
+.load-screen-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-screen-card {
+  background-color: var(--nav-bg);
+  border: 1px solid var(--nav-fg);
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  width: min(95%, 70rem);
+  font-size: max(1rem, 12vw);
+  padding: 1em 0.5em;
+}
+
+.load-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  gap: 1em;
+}
+
+.load-screen-icon {
+  width: 3em;
+}
+
+.load-screen-text {
+  flex-grow: 1;
+}
+
+.load-screen-spinner {
+  margin: 0.2em;
+  width: 2em;
+}
+
+@media (min-width: 30em) {
+  .load-screen-card {
+    font-size: min(5vw, 3rem);
+  }
+
+  .load-screen {
+    flex-direction: row;
+    max-width: 18em;
+  }
+
+  .load-screen-text {
+    white-space: nowrap;
+  }
+}
+
+/* Game list */
+
+.game-cell-spinner {
+  width: 40%;
+}
+
+/* Training overview page */
+
+.problem-page-start-training-spinner {
+  width: 2em;
+  margin-left: 2em;
+}
+
+/* Admin pages */
+
+.my-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 60em;
+}
+
+.my-form-row>label {
+  font-weight: 500;
+  width: 30%;
+  min-width: 20ch;
+  margin-right: 1em;
+}
+
+.uid-input {
+  width: 40ch;
+}
+
+.admin-date-str {
+  width: 30ch;
 }

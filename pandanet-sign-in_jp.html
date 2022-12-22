@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="jp"><head><title>AIの一手 | AIを活用して棋力向上へ</title><meta charset="utf-8" /><meta content="AIとの対局、棋譜のAIによる分析、棋譜からの詰碁生成を通して、棋力を大きく向上させます" name="description" /><meta content="Go,Go Game,Go AI,AI Sensei,Board Game,Igo,Baduk,Weiqi,바둑,囲碁,AI,Review,Tutorial,Studying,KataGo,Leela,Leela Zero,ELF,AlphaGo" name="keywords" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /></head><body><p>AIの一手にサインイン中 ...</p><noscript><div class="d-flex flex-column justify-content-center" style="min-height: 100%; min-height: 100vh;"><div class="container"><div class="row"><div class="col col-lg-6 mx-auto"><div class="card" style="margin-top: auto"><div class="card-body"><h2 class="card-title">JavaScriptが必要です<hr /><p>申し訳ありませんが、 AIの一手 は JavaScript がないと正しく動作しません。
+		    有効にするか、別のブラウザで ai-no-itte.jp にアクセスしてみてください。</p></h2></div></div></div></div></div></div></noscript><script>var firebase_db = "PRODUCTION";var firebase_config = { projectId: "sensei-160117", apiKey: "AIzaSyAjXnHmLSy6IKWu_rQHBCDlf7Vj9d4IafU", authDomain: "sensei-160117.firebaseapp.com", databaseURL: "https://sensei-160117.firebaseio.com", storageBucket: "sensei-160117.appspot.com", messagingSenderId: "670187203450", appId:"1:670187203450:web:08f09dc683cc81772384c3", measurementId: "G-G2VPYKV0TM"};</script><script type="module">import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js';
+     import { getAuth, signInWithCustomToken } from 'https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js';
+     const urlParams = new URLSearchParams(window.location.search);
+     const token = urlParams.get('token');
+     initializeApp(firebase_config);
+     signInWithCustomToken(getAuth(), token)
+       .then(() => window.close())
+       .catch((e) => console.error(e));</script></body></html>

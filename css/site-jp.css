@@ -1,31 +1,7 @@
 /* Typography */
 
-@font-face {
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('/css/fonts/NotoSansJP-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
-        url('/css/fonts/NotoSansJP-Medium.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-        url('/css/fonts/NotoSansJP-Bold.otf') format('opentype');
-}
-
 body {
-    font-family: Noto Sans JP;
+    font-family: Yu Gothic, sans serif;
 }
 
 /* Navigation */
@@ -34,4 +10,19 @@ body {
     width: 4rem;
     height: 4rem;
     margin: -0.3rem;
+}
+
+.main-nav .logo h3 {
+    font-weight: 500;
+    font-size: 1.9rem !important;
+}
+
+.main-nav.expanded .nav-row {
+    font-weight: 500;
+    font-size: 1.3rem !important;
+}
+
+.main-nav .btn-signup {
+    letter-spacing: -0.3em;
+    padding-left: 0.4em;
 }

@@ -117,7 +117,7 @@
   align-items: center;
   height: 100%;
   margin: 0 auto;
-  gap: 1em;
+  gap: 0.7em;
 }
 
 .load-screen-icon {
@@ -133,7 +133,7 @@
   width: 2em;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 40em) {
   .load-screen-card {
     font-size: min(5vw, 3rem);
   }
@@ -143,9 +143,6 @@
     max-width: 18em;
   }
 
-  .load-screen-text {
-    white-space: nowrap;
-  }
 }
 
 /* Game list */

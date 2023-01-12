@@ -405,6 +405,17 @@ body,
   font-size: 0.9rem;
 }
 
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+}
+
 .landing-footer {
   margin-top: 3rem;
   margin-bottom: -1.5rem;
@@ -414,7 +425,8 @@ body,
   margin-bottom: 3.5rem;
 }
 
-.main-nav .legal-info a {
+.main-nav .legal-info a,
+.social-media-icons a {
   padding: 0 0.5rem;
   color: var(--nav-footer-fg);
 }
@@ -423,11 +435,13 @@ body,
   color: var(--nav-active-fg);
 }
 
-.main-nav .legal-info a:hover {
+.main-nav .legal-info a:hover,
+.social-media-icons a:hover {
   color: var(--nav-hover-fg);
 }
 
-.landing-footer .legal-info a {
+.landing-footer .legal-info a,
+.landing-footer .social-media-icons a {
   padding: 0 0.5rem;
   color: #555;
 }
@@ -1951,7 +1965,7 @@ play-ai-game-row {
 }
 
 #score-graph g.highlight rect {
-  fill: var(--move-color);
+  fill: var(--nav-bg);
   shape-rendering: crispEdges;
 }
 
@@ -2333,29 +2347,31 @@ img.article-image {
   stroke-width: 0;
 }
 
-.graph-black-area {
-  fill: #00000050;
-}
-
-.graph-white-area {
-  fill: #ffffff50;
-}
-
-.graph-zero-line {
-  stroke-width: 2;
-  stroke: #043db0;
-}
-
-rect.black-errors {
-  fill: black;
-}
-
-rect.white-errors {
-  fill: white;
-}
-
 .graph-axis-text {
-  font: 13px sans-serif;
+  font: 0.6rem sans-serif;
+  font-weight: 600;
+}
+
+.score-graph-error-circle {
+  pointer-events: none;
+  stroke-width: 2;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6));
+}
+
+.score-graph-error-circle.black {
+  stroke: black;
+}
+
+.score-graph-error-circle.white {
+  stroke: white;
+}
+
+.score-graph-error-circle.mistake {
+  fill: #cf715e;
+}
+
+.score-graph-error-circle.blunder {
+  fill: var(--blunder);
 }
 
 .quiz-results {

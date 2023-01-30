@@ -4,6 +4,7 @@
   --color-accent: hsl(223, 25%, 22%);
   --color-accent-hover: hsl(223, 25%, 30%);
   --color-accent-text: white;
+  --color-pandanet-trial: rgb(140, 19, 174);
 }
 
 /* Layout */
@@ -16,6 +17,10 @@
   width: 90%;
   max-width: 80rem;
   margin: 0 auto;
+}
+
+.flex-gap-1 {
+  gap: .25em;
 }
 
 /* Buttons */
@@ -143,6 +148,37 @@
     max-width: 18em;
   }
 
+}
+
+/* Upload page */
+
+.quality-overlay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.quality-overlay-text {
+  padding: 0 0.2em;
+  background-color: var(--color-pandanet-trial);
+  color: white;
+  border-radius: 0.3em;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+}
+
+.btn-pandanet-trial {
+  background-color: var(--color-pandanet-trial);
+  color: white;
+}
+
+.btn-pandanet-trial:hover {
+  opacity: 0.8;
+  color: white;
 }
 
 /* Game list */

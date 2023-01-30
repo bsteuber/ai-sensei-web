@@ -396,7 +396,7 @@ body,
 }
 
 .main-nav .footer {
-  height: 8rem;
+  margin-top: 3rem;
 }
 
 .main-nav .legal-info,
@@ -1580,6 +1580,9 @@ a.game-link {
   color: var(--card-fg) !important;
 }
 
+.btn .badge {
+  top: 0;
+}
 
 .tag.badge {
   font-size: 0.9rem;

@@ -1,3 +1,14 @@
+/* Breakpoints
+
+sm: @media (min-width: 36em)
+md: @media (min-width: 48em)
+lg: @media (min-width: 62em)
+xl: @media (min-width: 75em)
+
+They are consistent to bootstrap at 16px font size.
+
+*/
+
 /* Variables */
 
 :root {
@@ -5,9 +16,12 @@
   --color-accent-hover: hsl(223, 25%, 30%);
   --color-accent-text: white;
   --color-pandanet-trial: rgb(140, 19, 174);
+  --header-height: 4rem;
+  --nav-width-small: 5rem;
+  --nav-width-large: 16rem;
 }
 
-/* Layout */
+/* Layout utils */
 
 .my-wrapper {
   padding: 0 0 1rem;
@@ -92,16 +106,310 @@
   margin: 0;
 }
 
+/* Pulse animation */
+
+@keyframes pulse {
+  0% {
+    outline-width: .1rem;
+    outline-color: var(--pulse-color);
+  }
+
+  100% {
+    outline-width: var(--pulse-end-width);
+    outline-color: transparent;
+  }
+}
+
+.pulse {
+  --pulse-end-width: .6rem;
+  --pulse-color: #0d255f69;
+  outline-style: solid;
+  animation: pulse 1s infinite;
+}
+
+.pulse-navigation {
+  outline-offset: -.3rem;
+}
+
+.pulse-bright {
+  --pulse-color: hsla(289, 25%, 80%, 0.624);
+}
+
+.pulse-strong {
+  --pulse-color: #0d265fde;
+  --pulse-end-width: .8rem;
+}
+
+.pulse-stronger {
+  --pulse-color: #021272;
+  --pulse-end-width: 1.1rem;
+}
+
+/* Page layout */
+
+.page-layout {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-with-sidebar {
+  flex: 1;
+  display: flex;
+  height: 100%;
+}
+
+.page-layout-content {
+  flex: 1;
+}
+
+.fullscreen .page-layout-sidebar,
+.fullscreen .page-layout-header {
+  display: none;
+}
+
+/* md */
+@media (min-width: 48em) {
+
+  .page-layout-header {
+    display: none;
+  }
+}
+
+/* Header */
+
+.my-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.4em 1.2em;
+  height: 4rem;
+  background-color: var(--nav-bg);
+  color: var(--nav-fg);
+}
+
+.my-header a:hover {
+  text-decoration: none;
+}
+
+.main-nav-toggle {
+  background: transparent;
+  border: none;
+  color: var(--nav-fg);
+  font-size: 1.3rem;
+  padding: .3rem .8rem;
+}
+
+.main-nav-toggle:hover {
+  background-color: var(--nav-hover-bg);
+}
+
+.my-header .home-page-title {
+  margin-left: -1rem;
+}
+
+.page-title {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.my-header .page-title {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+}
+
+.my-header .sign-in-button {
+  margin-left: auto;
+}
+
+.my-header .btn-signup {
+  font-size: clamp(.9rem, 4vw, 1.3rem);
+}
+
+/* Navigation sidebar */
+
+.my-nav {
+  max-width: var(--nav-width-large);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: .5em 0em;
+  background-color: var(--nav-bg);
+  color: var(--nav-fg);
+  overflow-x: hidden;
+}
+
+.my-nav a:hover {
+  text-decoration: none;
+}
+
+.nav-margin-top {
+  margin-top: 2em;
+}
+
+.nav-spacer {
+  margin-top: auto;
+}
+
+.nav-button {
+  display: block;
+  color: var(--nav-fg);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-button:hover {
+  background-color: var(--nav-hover-bg);
+}
+
+.nav-button.active {
+  background-color: var(--nav-active-bg);
+}
+
+.nav-row {
+  font-size: 1.2rem;
+  padding: 0.375rem 0.5em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.nav-row-icon {
+  width: 4rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-row-label {
+  text-align: left;
+}
+
+@media (min-width: 48em) {
+
+  /* md+ */
+  .page-layout-sidebar,
+  .page-layout-content {
+    height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+.nav-footer {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  gap: 1em;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  row-gap: 0.2em;
+}
+
+.footer-link,
+.social-media-link {
+  color: var(--nav-footer-fg);
+}
+
+.footer-link.active {
+  color: white;
+}
+
+/* small nav on md and lg only */
+@media (min-width: 48em) and (max-width:74.9999em) {
+  .my-nav {
+    width: var(--nav-width-small);
+  }
+
+  .nav-row {
+    flex-direction: column;
+  }
+
+  .page-title {
+    font-size: 1rem;
+  }
+
+  .nav-row-label {
+    display: none;
+  }
+
+  .my-nav .btn-signup {
+    font-size: 1rem;
+    padding: 0.3em;
+  }
+
+  .nav-footer {
+    display: none;
+  }
+
+}
+
+/* Sidebar overlay */
+@media (max-width: 47.999em) {
+  .page-layout-sidebar {
+    position: absolute;
+    inset: 0;
+    /* background-color: #ff000050; */
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    filter: drop-shadow(3px 1px 2px rgba(0, 0, 0, 0.3));
+    transition: visibility 0.1s, opacity 0.1s ease-in;
+  }
+
+  .page-layout-sidebar.show-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .my-nav {
+    margin-top: var(--header-height);
+    height: calc(100vh - var(--header-height));
+  }
+
+  .my-nav>div:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .my-nav .home-page-title {
+    display: none;
+  }
+}
+
+/* Server-side rendering */
+
+.server-side-rendered .btn-signup {
+  visibility: hidden;
+}
+
 /* PAGES */
+
+/* Landing Page */
 
 /* Load Screen */
 
 .load-screen-wrapper {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: -1rem;
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
 }
 
 .load-screen-card {
@@ -111,7 +419,7 @@
   color: white;
   text-align: center;
   width: min(95%, 70rem);
-  font-size: max(1rem, 12vw);
+  font-size: max(1.5rem, 8vw);
   padding: 1em 0.5em;
 }
 
@@ -126,7 +434,7 @@
 }
 
 .load-screen-icon {
-  width: 3em;
+  width: 2.5em;
 }
 
 .load-screen-text {
@@ -135,7 +443,7 @@
 
 .load-screen-spinner {
   margin: 0.2em;
-  width: 2em;
+  width: 1.5em;
 }
 
 @media (min-width: 40em) {
@@ -148,6 +456,53 @@
     max-width: 18em;
   }
 
+}
+
+/* News Page */
+
+.news-content,
+.discuss-post-content {
+  position: relative;
+}
+
+.news-list .news-content:not(.expanded),
+.discuss .discuss-post-content:not(.expanded) {
+  max-height: 25em;
+  overflow-y: hidden;
+}
+
+.news-list .news-content:not(.expanded) .news-article-fade-out,
+.discuss .discuss-post-content:not(.expanded) .discuss-fade-out {
+  content: '';
+  position: absolute;
+  inset: 19em 0 0;
+  background: linear-gradient(to bottom, transparent, var(--card-bg) 60%);
+}
+
+.news-read-more-btn,
+.discuss-read-more-btn {
+  display: none;
+}
+
+.news-list .news-content:not(.expanded) .news-read-more-btn,
+.discuss .discuss-post-content:not(.expanded) .discuss-read-more-btn {
+  display: block;
+  position: absolute;
+  inset: 22em 0 0;
+  background-color: var(--card-bg);
+}
+
+.server-side-rendered lite-youtube {
+  background-color: #aaa !important;
+  background-image: none !important;
+}
+
+.server-side-rendered lite-youtube::before {
+  background-image: none !important;
+}
+
+.server-side-rendered lite-youtube .lty-playbtn {
+  display: block;
 }
 
 /* Upload page */
@@ -187,6 +542,14 @@
   width: 40%;
 }
 
+/* Board */
+
+.board-background {
+  background-image: url(/img/kaya14d.jpg);
+  background-size: cover;
+  min-width: 5rem;
+}
+
 /* Training overview page */
 
 .problem-page-start-training-spinner {
@@ -216,4 +579,10 @@
 
 .admin-date-str {
   width: 30ch;
+}
+
+.chart-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }

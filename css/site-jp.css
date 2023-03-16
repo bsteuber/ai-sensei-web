@@ -12,17 +12,11 @@ body {
     margin: -0.3rem;
 }
 
-.main-nav .logo h3 {
-    font-weight: 500;
-    font-size: 1.9rem !important;
-}
-
-.main-nav.expanded .nav-row {
-    font-weight: 500;
+.my-nav .nav-row-label {
     font-size: 1.3rem !important;
 }
 
-.main-nav .btn-signup {
-    letter-spacing: -0.3em;
-    padding-left: 0.4em;
+.btn-signup {
+    letter-spacing: -0.2em;
+    padding-left: 0.6em;
 }

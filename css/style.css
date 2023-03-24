@@ -3031,8 +3031,26 @@ comment-body h7 {
   background-color: #faa;
 }
 
-.job-queue-table .game-info span.job {
-  padding-left: 0.2rem;
+.instance-status-list .worker.worker-connected { background-color: #8e8; }
+.instance-status-list .error { background-color: #f55; }
+
+.instance-status-list .RUNNING { background-color: #8e8; }
+.instance-status-list .STAGING { background-color: #ee8; }
+.instance-status-list .STOPPING { background-color: #e8e; }
+.instance-status-list .TERMINATED { background-color: #e88; }
+
+.job-queue-table span.badge,
+.instance-status-list span.badge {
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  margin: 0 0.1em;
+  font-size: 100%;
+  color: black;
+}
+
+.instance-status-list span.worker {
+  height: 100%;
+  background-color: #e88;
 }
 
 .admin-job-queues .worker-status,
@@ -3072,8 +3090,6 @@ comment-body h7 {
 .css-table .thead .th {
   font-size: 120%;
   font-weight: bold;
-  height: 10rem;
-  position: relative;
   border: none;
 }
 

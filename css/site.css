@@ -94,12 +94,20 @@ They are consistent to bootstrap at 16px font size.
   background-size: cover;
 }
 
-.my-spinner.dark {
-  background-image: url(/img/spinner-dark.png);
+.my-spinner {
+  background-image: url(/img/spinner-dark-small.png);
 }
 
 .my-spinner.light {
-  background-image: url(/img/spinner-light.png);
+  background-image: url(/img/spinner-light-small.png);
+}
+
+.my-spinner.large {
+  background-image: url(/img/spinner-dark-large.png);
+}
+
+.my-spinner.large.light {
+  background-image: url(/img/spinner-light-large.png);
 }
 
 .button-spinner {
@@ -200,6 +208,10 @@ They are consistent to bootstrap at 16px font size.
   color: var(--nav-fg);
   font-size: 1.3rem;
   padding: .3rem .8rem;
+}
+
+.server-side-rendered .main-nav-toggle {
+  visibility: hidden;
 }
 
 .main-nav-toggle:hover {
@@ -539,7 +551,7 @@ They are consistent to bootstrap at 16px font size.
 /* Game list */
 
 .game-cell-spinner {
-  width: 40%;
+  font-size: 70px;
 }
 
 /* Board */
@@ -548,6 +560,11 @@ They are consistent to bootstrap at 16px font size.
   background-image: url(/img/kaya14d.jpg);
   background-size: cover;
   min-width: 5rem;
+}
+
+.ai-disabled .board-point-spinner,
+.logged-out .board-point-spinner {
+  display: none;
 }
 
 /* Training overview page */

@@ -80,9 +80,9 @@
   --blunder-on-black: #cb3330;
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
-  --plan-basic-bg: #9bbaf7;
-  --plan-dan-bg: #ddd;
-  --plan-pro-bg: #eece1f;
+  --plan-basic-bg: hsl(220, 90%, 80%);
+  --plan-dan-bg: hsl(250, 90%, 80%);
+  --plan-pro-bg: hsl(45, 90%, 70%);
 }
 
 #app.theme-dark {
@@ -2307,6 +2307,7 @@ circle.ownership.diff.white {
   display: none !important;
 }
 
+
 .with-category .move-category {
   display: block;
   fill: none;
@@ -2701,7 +2702,9 @@ path.check-mark {
   position: relative;
 }
 
-.badge-free {
+.badge-free,
+.plan-card-free,
+.btn-plan.free {
   background-color: white;
 }
 
@@ -3031,13 +3034,29 @@ comment-body h7 {
   background-color: #faa;
 }
 
-.instance-status-list .worker.worker-connected { background-color: #8e8; }
-.instance-status-list .error { background-color: #f55; }
+.instance-status-list .worker.worker-connected {
+  background-color: #8e8;
+}
 
-.instance-status-list .RUNNING { background-color: #8e8; }
-.instance-status-list .STAGING { background-color: #ee8; }
-.instance-status-list .STOPPING { background-color: #e8e; }
-.instance-status-list .TERMINATED { background-color: #e88; }
+.instance-status-list .error {
+  background-color: #f55;
+}
+
+.instance-status-list .RUNNING {
+  background-color: #8e8;
+}
+
+.instance-status-list .STAGING {
+  background-color: #ee8;
+}
+
+.instance-status-list .STOPPING {
+  background-color: #e8e;
+}
+
+.instance-status-list .TERMINATED {
+  background-color: #e88;
+}
 
 .job-queue-table span.badge,
 .instance-status-list span.badge {

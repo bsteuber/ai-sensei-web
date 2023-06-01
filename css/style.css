@@ -1013,9 +1013,8 @@ a.highlight {
   font-size: 1.2rem;
 }
 
-.upload-file .paste .help-button {
-  display: inline-block;
-  margin-right: 2em;
+.help-button>i:hover {
+  text-decoration: none;
 }
 
 .upload-page .btn-lg {
@@ -2005,6 +2004,8 @@ img.article-image {
 
 .fading-overlay {
   position: absolute;
+  inset: 0;
+  pointer-events: none;
   transition: opacity .2s ease-in-out;
 }
 

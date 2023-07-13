@@ -574,6 +574,34 @@ They are consistent to bootstrap at 16px font size.
   margin-left: 2em;
 }
 
+/* Play AI */
+
+.play-ai-handicap-row {
+  margin-top: -0.5rem;
+  font-style: italic;
+}
+
+/* Ranked mode page */
+
+.current-rank-box {
+  display: flex;
+  /* background-color: rgb(31, 119, 180);
+  color: white; */
+
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.current-rank-box .current-rank {
+  color: rgb(5, 80, 133);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.ranked-overview-players .font-large {
+  font-size: 1.3rem !important;
+}
+
 /* Admin pages */
 
 .my-form-row {

@@ -2319,7 +2319,8 @@ circle.ownership.diff.white {
 }
 
 .ai-disabled .move-category,
-.ai-disabled .hide-on-ai-disabled {
+.ai-disabled .hide-on-ai-disabled,
+.ai-disabled .node-info {
   display: none !important;
 }
 

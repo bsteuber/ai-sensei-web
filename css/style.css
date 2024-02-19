@@ -165,14 +165,6 @@
   user-select: none;
 }
 
-.nodrag {
-  touch-action: none;
-  -webkit-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-  user-drag: none;
-}
-
 hr {
   opacity: 0.1;
 }
@@ -2385,6 +2377,11 @@ circle.ownership.diff.white {
   visibility: hidden;
 }
 
+.recommended-move .move-category {
+  fill: rgb(218, 11, 218);
+  opacity: 0.8;
+}
+
 .ai-move .move-category {
   fill: var(--ai-move);
   opacity: 0.8;
@@ -3037,9 +3034,12 @@ comment-body h7 {
   white-space: nowrap;
 }
 
-.job-queue-table,
-.worker-status {
+.job-queue-table .worker-status {
   margin: 0.8rem;
+}
+
+.job-queue-table .color-legend {
+  font-size: 70%;
 }
 
 .job-queue-table .queue-high-playout-high-prio {
@@ -3051,11 +3051,11 @@ comment-body h7 {
 }
 
 .job-queue-table .queue-low-playout-high-prio {
-  background-color: #88d;
+  background-color: #aaf;
 }
 
 .job-queue-table .queue-low-playout-low-prio {
-  background-color: #ccf;
+  background-color: #cce;
 }
 
 .job-queue-table .queue-in-progress {

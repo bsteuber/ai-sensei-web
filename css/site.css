@@ -626,6 +626,69 @@ They are consistent to bootstrap at 16px font size.
   margin-bottom: 0;
 }
 
+/* Pricing page */
+
+.pricing-title {
+  color: white;
+}
+
+.pricing-card-header {
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.badge-most-popular {
+  color: black;
+}
+
+.pricing-card-header-basic {
+  background-color: hsl(220, 100%, 40%);
+}
+
+.pricing-card-header-standard {
+  background-color: hsl(250, 100%, 60%);
+}
+
+.pricing-card-header-pro {
+  background-color: hsl(45, 100%, 35%);
+}
+
+.pricing-card-body {
+  background-color: white;
+}
+
+.pricing-card-footer {
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.pricing-plans {
+  display: grid;
+}
+
+@media (min-width: 48em) {
+  .pricing-plans {
+    max-width: 75rem;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+.pricing-benefit-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pricing-benefit-list li:before {
+  content: '✓';
+  color: green;
+  font-weight: bold;
+  font-size: larger;
+  margin-right: 0.4rem;
+}
+
 /* Admin pages */
 
 .my-form-row {

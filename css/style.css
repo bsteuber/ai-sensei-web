@@ -6,7 +6,7 @@
   --focus-opacity: 0.4;
   --primary-hover-l: calc(var(--primary-l) * var(--hover-brighten));
   --success-h: calc(var(--primary-h) - 90);
-  --success-l: calc(var(--primary-l));
+  --success-l: calc(var(--primary-l) - 5%);
   --success-hover-l: calc(var(--success-l) * var(--hover-brighten));
   --warning-h: calc(var(--primary-h) - 160);
   --warning-l: calc(var(--primary-l) + 18%);
@@ -81,8 +81,11 @@
   --blunder-on-white: #ff0500;
   --board-tooltip: #ffffffd0;
   --plan-basic-bg: hsl(220, 90%, 80%);
-  --plan-dan-bg: hsl(250, 90%, 80%);
-  --plan-pro-bg: hsl(45, 90%, 70%);
+  --plan-basic-border: hsl(220, 60%, 40%);
+  --plan-dan-bg: hsl(270, 100%, 75%);
+  --plan-dan-border: hsl(270, 60%, 40%);
+  --plan-pro-bg: hsl(45, 80%, 70%);
+  --plan-pro-border: hsl(45, 60%, 35%);
 }
 
 #app.theme-dark {
@@ -130,7 +133,7 @@
 }
 
 #app,
-#app.theme-light {
+.theme-light {
   --page-fg: #090d17;
   --link-color: #2A3866;
   --page-bg: #eee;
@@ -282,6 +285,28 @@ hr {
 .btn-danger:focus,
 .btn-danger.focus {
   box-shadow: 0 0 0 .2rem var(--danger-focus);
+}
+
+.alert-highlight {
+  color: hsl(37, 93%, 12%);
+  background-color: hsl(37, 90%, 90%);
+  border-color: hsl(37, 90%, 79%);
+}
+
+.alert-highlight .alert-link {
+  color: hsl(37, 100%, 26%);
+}
+
+.btn-highlight {
+  background-color: hsl(37, 90%, 40%);
+  border-color: hsl(37, 90%, 40%);
+  color: white;
+}
+
+.btn-highlight:hover {
+  background-color: hsl(37, 90%, 44%);
+  border-color: hsl(37, 90%, 44%);
+  color: white;
 }
 
 .text-primary {
@@ -2574,14 +2599,22 @@ path.check-mark {
 
 .board-check-mark {
   stroke: black;
-  fill: #0eea30;
+  fill: #05af1e;
 }
 
 .hint-square {
-  fill: rgba(255, 255, 255, 0.3);
   stroke: white;
   stroke-width: 3px;
-  vector-effect: non-scaling-stroke;
+  fill: hsl(35, 69%, 80%);
+}
+
+
+.hint-square-borders .hint-square {
+  fill: transparent;
+}
+
+.hint-square-inners .hint-square {
+  stroke: none;
 }
 
 .new-badge {
@@ -2702,11 +2735,6 @@ path.check-mark {
   color: #333;
 }
 
-.badge-free,
-.btn-plan.free {
-  background-color: white;
-}
-
 .plan-card {
   border: none;
 }
@@ -2738,10 +2766,6 @@ path.check-mark {
 .plan-card-pro,
 .btn-plan.pro {
   background-color: var(--plan-pro-bg);
-}
-
-.badge-free {
-  background-color: #eee;
 }
 
 .card-option-unselected {
@@ -3034,48 +3058,64 @@ comment-body h7 {
   white-space: nowrap;
 }
 
-.job-queue-table .worker-status {
+.scheduler-admin-card .css-table .thead {
+  font-size: 0.8em;
+}
+
+.analysis-queue-table .worker-status {
   margin: 0.8rem;
 }
 
-.job-queue-table .color-legend {
+.color-legend {
   font-size: 70%;
 }
 
-.job-queue-table .queue-high-playout-high-prio {
+.queue-high-playout-high-prio {
   background-color: #5ff;
 }
 
-.job-queue-table .queue-high-playout-low-prio {
+.queue-high-playout-low-prio {
   background-color: #8dd;
 }
 
-.job-queue-table .queue-low-playout-high-prio {
+.queue-low-playout-high-prio {
   background-color: #aaf;
 }
 
-.job-queue-table .queue-low-playout-low-prio {
+.queue-low-playout-low-prio {
   background-color: #cce;
 }
 
-.job-queue-table .queue-in-progress {
-  background-color: #5f5;
+.worker-high-playout-analysis {
+  background-color: #fa4;
 }
 
-.job-queue-table .queue-failure {
-  background-color: #f55;
+.worker-low-playout-analysis {
+  background-color: #d82;
 }
 
-.worker-status .worker-connected {
-  background-color: #8e8;
+.worker-high-playout-live {
+  background-color: #ff5;
 }
 
-.worker-status .worker-error {
+.worker-low-playout-live {
+  background-color: #dd8;
+}
+
+.worker-disconnected {
+  color: #888 !important;
+}
+
+.worker-error {
   background-color: #faa;
 }
 
-.instance-status-list .worker.worker-connected {
-  background-color: #8e8;
+.analysis-queue-table .queue-in-progress {
+  background-color: #5f5;
+}
+
+.analysis-queue-table .queue-failure {
+  background-color: #f55;
 }
 
 .instance-status-list .error {
@@ -3098,18 +3138,28 @@ comment-body h7 {
   background-color: #e88;
 }
 
-.job-queue-table span.badge,
+.scheduler-admin-card {
+  background-color: #0000000a;
+  border-top: 1px solid #ffffff60;
+  border-left: 1px solid #ffffff60;
+  border-bottom: 1px solid #00000010;
+  border-right: 1px solid #00000010;
+  padding: 0.5em;
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.scheduler-admin-expander {
+  justify-content: space-between;
+}
+
+.analysis-queue-table span.badge,
+.instances-table span.badge,
 .instance-status-list span.badge {
   display: inline-block;
   padding: 0.2em 0.3em;
   margin: 0 0.1em;
   font-size: 100%;
   color: black;
-}
-
-.instance-status-list span.worker {
-  height: 100%;
-  background-color: #e88;
 }
 
 .admin-job-queues .worker-status,
@@ -3152,12 +3202,12 @@ comment-body h7 {
   border: none;
 }
 
-.job-queue-table .clickable-job {
+.analysis-queue-table .clickable-job {
   cursor: pointer;
   color: var(--link-color);
 }
 
-.job-queue-table .clickable-job:hover {
+.analysis-queue-table .clickable-job:hover {
   background-color: #00000030
 }
 

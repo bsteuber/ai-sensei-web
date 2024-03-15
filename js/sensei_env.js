@@ -5,6 +5,7 @@ SENSEI_ENV = {
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   ENABLE_LIVE_MODE: "true",
   ENABLE_PANDANET_SIGNIN: "true",
+  ENABLE_PANDANET_GAME_IMPORT: "true",
   HUMANLIKE_HOST: "https://ai-sensei.com/predict-humanlike",
   ENABLE_HUMANLIKE_BOTS: "true",
   ENABLE_HUMANLIKE_BOTS_JP: "false",

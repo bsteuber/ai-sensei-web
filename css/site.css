@@ -228,10 +228,6 @@ They are consistent to bootstrap at 16px font size.
   padding: .3rem .8rem;
 }
 
-.server-side-rendered .main-nav-toggle {
-  visibility: hidden;
-}
-
 .main-nav-toggle:hover {
   background-color: var(--nav-hover-bg);
 }
@@ -425,7 +421,15 @@ They are consistent to bootstrap at 16px font size.
 
 /* Server-side rendering */
 
-.server-side-rendered .btn-signup {
+.visible-before-loading {
+  visibility: hidden;
+}
+
+.server-side-rendered .visible-before-loading {
+  visibility: visible;
+}
+
+.server-side-rendered .visible-after-loading {
   visibility: hidden;
 }
 
@@ -809,4 +813,44 @@ They are consistent to bootstrap at 16px font size.
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Performance histogram */
+
+.performance-histogram {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto 1fr;
+  align-items: center;
+}
+
+.performance-histogram-count {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 15px;
+}
+
+.performance-histogram-bar {
+  height: 40px;
+  border: 1px solid black;
+  margin-top: -1px;
+}
+
+.performance-histogram-bar.ai-move {
+  background-color: var(--ai-move);
+}
+
+.performance-histogram-bar.good-move {
+  background-color: var(--good-move);
+}
+
+.performance-histogram-bar.inaccuracy {
+  background-color: var(--inaccuracy);
+}
+
+.performance-histogram-bar.mistake {
+  background-color: var(--mistake);
+}
+
+.performance-histogram-bar.blunder {
+  background-color: var(--blunder);
 }

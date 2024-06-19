@@ -1526,11 +1526,6 @@ img.white-black {
   height: 1em;
 }
 
-.expert-mode .sidebar-menu-label,
-.expert-mode .nav-control-label {
-  display: none;
-}
-
 .controls i {
   font-size: 3.6rem !important;
 }
@@ -2171,12 +2166,25 @@ img.article-image {
   transition: background-color 0.2s;
 }
 
+.new-slider.slider-toggle.mini-slider-toggle {
+  height: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.new-slider.slider-toggle.mini-slider-toggle .knob {
+  height: 0.9rem;
+}
+
 .new-slider.slider-toggle.slider-value-1 {
   background-color: rgb(71, 124, 232);
 }
 
 .new-slider.slider-toggle.slider-value-0 {
   background-color: rgb(149, 155, 166);
+}
+
+.new-slider.slider-toggle.mini-slider-toggle.slider-value-0 {
+  background-color: hsl(0, 80%, 39%);
 }
 
 .new-slider .slider-option {
@@ -2337,8 +2345,17 @@ circle.ownership.diff.white {
 
 .ai-disabled .move-category,
 .ai-disabled .hide-on-ai-disabled,
-.ai-disabled .node-info {
+.ai-disabled .node-info,
+.ai-enabled .hide-on-ai-enabled {
   display: none !important;
+}
+
+.card-body.sidebar-top-card {
+  padding-bottom: 0;
+}
+
+.card-body.sidebar-bottom-card {
+  padding-top: 0;
 }
 
 .easy-mode .hide-on-easy-mode {
@@ -3209,24 +3226,6 @@ comment-body h7 {
 
 .analysis-queue-table .clickable-job:hover {
   background-color: #00000030
-}
-
-.expert-mode-select .select-button {
-  box-shadow: 0 0 0 1px #000000bb;
-  opacity: 0.8;
-}
-
-.expert-mode-select .select-button:hover {
-  box-shadow: 0 0 0 2px #000000bb;
-}
-
-.expert-mode-select .select-button.selected {
-  box-shadow: 0 0 0 3px #000000bb !important;
-  opacity: 1;
-}
-
-.expert-mode-select img {
-  max-width: 100%;
 }
 
 /* Slider CSS

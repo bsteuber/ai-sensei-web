@@ -367,6 +367,12 @@ body,
   padding-top: 1rem;
 }
 
+@media (max-width: 47.999em) {
+  #content-wrapper {
+    max-height: calc(100vh - var(--header-height));
+  }
+}
+
 .nav-small #content {
   padding-top: 4.8rem;
   padding-bottom: 6rem;
@@ -3522,4 +3528,14 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
   .firebaseui-idp-text.firebaseui-idp-text-long {
     display: none !important;
   }
+}
+
+@media(max-width: 360px) {
+ .white-lead-text {
+   font-size: x-small
+ }
+
+ .black-lead-text {
+   font-size: x-small
+ }
 }

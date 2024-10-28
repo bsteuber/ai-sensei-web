@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.ai_sensei.app",
+            "sha256_cert_fingerprints": [
+                "cSRnVnk+RSAZfykPsBm0YYS1oiRY0ww7cmnrhFy6+tQ="
+            ]
+        }
+    }
+]

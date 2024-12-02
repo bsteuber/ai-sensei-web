@@ -380,6 +380,7 @@ body,
 }
 
 .nav-small.training-page #content,
+.nav-small.challenge-page #content,
 .nav-small.play-ai-game-page #content {
   padding-top: 3.8rem;
 }
@@ -387,6 +388,7 @@ body,
 .fullscreen #content,
 .game-page #content,
 .training-page #content,
+.challenge-page #content,
 .game-record-page #content,
 .play-ai-game-page #content {
   padding-top: 0;
@@ -818,6 +820,9 @@ a.highlight {
   color: var(--link-color-highlight);
 }
 
+.markdown-wrapper .markdown:last-child>p:last-child {
+  margin-bottom: 0;
+}
 
 .auth-bar-link {
   border-radius: 3px;

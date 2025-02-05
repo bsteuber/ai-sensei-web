@@ -396,9 +396,14 @@ They are consistent to bootstrap at 16px font size.
     padding: 0.3em;
   }
 
+  .nav-user-area {
+    margin-bottom: auto;
+  }
+
   .nav-footer {
     display: none;
   }
+
 
 }
 

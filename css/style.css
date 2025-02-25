@@ -390,7 +390,8 @@ body,
 .training-page #content,
 .challenge-page #content,
 .game-record-page #content,
-.play-ai-game-page #content {
+.play-ai-game-page #content,
+.learn-go-page #content {
   padding-top: 0;
 }
 
@@ -2340,6 +2341,11 @@ circle.ownership.diff.white {
   stroke: #FFF;
 }
 
+.board-label.red {
+  fill: #bd0606;
+  stroke: #bd0606;
+}
+
 .black-stone .board-label {
   fill: #FFF;
   stroke: #FFF;
@@ -2604,6 +2610,12 @@ path.check-mark {
 .quiz-mark.white path.check-mark {
   fill: #fff;
   stroke: #000;
+}
+
+.quiz-mark.green path.check-mark {
+  fill: #138603;
+  stroke: #000;
+  stroke-width: 0.5;
 }
 
 .quiz-mark.black path.check-mark {

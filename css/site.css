@@ -33,6 +33,10 @@ They are consistent to bootstrap at 16px font size.
   margin: 0 auto;
 }
 
+.bg-lightgreen {
+  background-color: hsl(126.5, 69.2%, 58%);
+}
+
 /* Tables */
 
 .table-xs> :not(caption)>*>* {

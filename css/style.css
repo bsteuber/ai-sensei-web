@@ -2333,12 +2333,12 @@ circle.ownership.diff.white {
 
 .board-label.black {
   fill: #000;
-  stroke: #000;
+  stroke: #FFF;
 }
 
 .board-label.white {
   fill: #FFF;
-  stroke: #FFF;
+  stroke: #000;
 }
 
 .board-label.red {
@@ -2348,12 +2348,12 @@ circle.ownership.diff.white {
 
 .black-stone .board-label {
   fill: #FFF;
-  stroke: #FFF;
+  stroke: #000;
 }
 
 .white-stone .board-label {
   fill: #000;
-  stroke: #000;
+  stroke: #FFF;
 }
 
 .move-category {
@@ -2888,15 +2888,15 @@ comment-body h7 {
   opacity: 0.7;
 }
 
-.markdown th,
-.markdown td {
+.faq-page .markdown th,
+.faq-page .markdown td {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.markdown table,
-.markdown th,
-.markdown td {
+.faq-page .markdown table,
+.faq-page .markdown th,
+.faq-page .markdown td {
   border: 1px solid black;
 }
 

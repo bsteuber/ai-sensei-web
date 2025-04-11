@@ -3512,41 +3512,6 @@ input[type=range].styled-slider:hover::-ms-fill-upper {
   flex: 1;
 }
 
-.firebaseui-container {
-  max-width: 40rem !important;
-}
-
-.firebaseui-idp-button,
-.firebaseui-tenant-button {
-  max-width: 16rem !important;
-}
-
-.firebaseui-card-content {
-  padding: 0 !important;
-}
-
-.firebaseui-idp-text {
-  font-size: 1rem !important;
-}
-
-.firebaseui-idp-text.firebaseui-idp-text-short {
-  display: none !important;
-}
-
-.firebaseui-idp-text.firebaseui-idp-text-long {
-  display: table-cell !important;
-}
-
-@media(max-width: 20em) {
-  .firebaseui-idp-text.firebaseui-idp-text-short {
-    display: table-cell !important;
-  }
-
-  .firebaseui-idp-text.firebaseui-idp-text-long {
-    display: none !important;
-  }
-}
-
 @media(max-width: 360px) {
   .white-lead-text {
     font-size: x-small

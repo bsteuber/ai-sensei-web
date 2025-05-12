@@ -1819,6 +1819,16 @@ play-ai-game-row {
   font-size: 1.5rem !important;
 }
 
+@media (min-width: 576px) {
+  .font-sm-normal {
+    font-size: 1rem !important;
+  }
+
+  .font-sm-x-large {
+    font-size: 1.5rem !important;
+  }
+}
+
 .font-xx-large {
   font-size: 2rem !important;
 }
@@ -1841,9 +1851,17 @@ play-ai-game-row {
   font-size: 1.25rem;
 }
 
+.modal-content-large {
+  width: calc(100vw - 1rem);
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: min(80vw, 50rem);
+    max-width: min(80vw, 60rem);
+  }
+
+  .modal-content-large {
+    width: calc(min(75vw, 60rem) - 4rem);
   }
 }
 

@@ -2364,12 +2364,12 @@ circle.ownership.diff.white {
   stroke: #bd0606;
 }
 
-.black-stone .board-label {
+.black-stone .board-label.black {
   fill: #FFF;
   stroke: #000;
 }
 
-.white-stone .board-label {
+.white-stone .board-label.white {
   fill: #000;
   stroke: #FFF;
 }

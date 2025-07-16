@@ -951,3 +951,27 @@ They are consistent to bootstrap at 16px font size.
 .performance-histogram-bar.blunder {
   background-color: var(--blunder);
 }
+
+.cursor-move {
+  cursor: move;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+.cursor-goto {
+  cursor: url('/img/goto-cursor.svg') 18 5, pointer;
+}

@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "342KKTY9U8.com.ai-sensei.app",
+        "paths": ["/pandanet-sign-in*"]
+      }
+    ]
+  }
+}

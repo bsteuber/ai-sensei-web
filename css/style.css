@@ -2429,6 +2429,11 @@ circle.ownership.diff.white {
   fill: #fff;
 }
 
+.with-category.unknown .board-label.white {
+  stroke: #fff;
+  fill: #000;
+}
+
 .with-category .board-label.black {
   stroke: #222;
   fill: #222;

@@ -162,6 +162,55 @@
   --tag-border: #00000080;
 }
 
+.svg-icon {
+  height: 1.2em;
+  vertical-align: -.175em;
+  aspect-ratio: 1;
+  fill: currentColor;
+}
+
+.svg-icon.svg-icon-fas-robot {
+  height: 1.4em;
+}
+
+.svg-icon.svg-icon-cu-go-board-list {
+  height: 1.9em;
+}
+
+.svg-icon.stroke-black {
+  stroke: black;
+  stroke-width: 0.7;
+}
+
+.svg-icon-cu-go-board-list {
+  height: 34px;
+}
+
+.svg-icon.svg-icon-ma {
+  height: 1.5em;
+}
+
+.svg-icon.size-20 {
+  height: 20px;
+}
+
+.svg-icon.size-32 {
+  height: 32px;
+}
+
+.svg-icon.star-quality-low {
+  color: #cd7f32;
+}
+
+.svg-icon.star-quality-medium {
+  color: #dedede;
+}
+
+.svg-icon.star-quality-high {
+  color: gold;
+}
+
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -833,7 +882,7 @@ a.highlight {
   background-color: #ffffff40;
 }
 
-.credits {
+.icon-custom-credits {
   color: #d6c939;
 }
 
@@ -1551,9 +1600,14 @@ img.white-black {
   margin-bottom: 2px;
 }
 
-.trial-board-icon {
-  font-size: 1.2rem;
+.svg-icon.svg-icon-cu-go-board.trial-board-icon {
+  height: 19px;
+  margin-bottom: 3px;
   color: #e89b28;
+}
+
+.light-drop .svg-icon.svg-icon-cu-go-board {
+  color: #484848;
 }
 
 .quiz-next-game-icon,
@@ -1633,8 +1687,24 @@ play-ai-game-row {
   text-align: right;
 }
 
-.open-game-icon {
-  font-size: 1.3rem;
+.svg-icon.open-game-icon {
+  height: 21px;
+}
+
+.button-with-icon .svg-icon {
+  height: 26px;
+  margin-bottom: 1px;
+  margin-left: -5px;
+}
+
+.upload-price-icon .svg-icon {
+  height: 46px;
+  margin: -10px -4px -10px -10px;
+}
+
+.svg-icon.upload-large-icon {
+  height: 150px;
+  color: rgba(128, 128, 128, 0.4);
 }
 
 
@@ -1671,19 +1741,25 @@ play-ai-game-row {
   color: #ec4141;
 }
 
-.controls .icon-to_end_of_game,
-.controls .icon-rewind_to_start {
-  font-size: 4.3rem !important;
+.nav-control.nav-close-button .svg-icon {
+  height: 34px;
+}
+
+.svg-icon.svg-icon-cu-to-end-of-game,
+.svg-icon.svg-icon-cu-rewind-to-start {
+  height: 66px;
   margin: -0.9rem 0 -0.8rem;
 }
 
-.controls .icon-next_mistake,
-.controls .icon-previous_mistake {
+.svg-icon.svg-icon-cu-next-mistake,
+.svg-icon.svg-icon-cu-previous-mistake {
+  height: 56px;
   margin: -0.5rem 0 -0.5rem;
 }
 
-.controls .icon-next_move,
-.controls .icon-previous_move {
+.svg-icon.svg-icon-cu-next-move,
+.svg-icon.svg-icon-cu-previous-move {
+  height: 56px;
   margin: -0.5rem 0 -0.5rem;
 }
 
@@ -1708,11 +1784,12 @@ play-ai-game-row {
   color: var(--mistake-color) !important;
 }
 
-.controls i.quiz-navigation {
-  font-size: 2.7rem !important;
+.controls .quiz-navigation {
+  font-size: 2.8rem !important;
 }
 
-.controls i.close-icon {
+
+.controls .close-icon {
   font-size: 2.5rem !important;
 }
 
@@ -2135,27 +2212,30 @@ img.article-image {
 .edit-translation {
   box-sizing: border-box;
   position: relative;
-  font-size: 0 !important;
   vertical-align: super;
   pointer-events: all;
-}
-
-.edit-translation .icon-edit {
-  position: absolute;
-  top: -0.8em;
-  left: -0.2em;
-  margin-right: -1.0rem;
-  font-size: 1rem !important;
   cursor: pointer;
-}
-
-.edit-translation .icon-edit:before {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
   background-color: #777;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+  padding: 0.25rem;
+  transition: background-color 0.2s ease;
 }
 
-.edit-translation .icon-edit:hover:before {
+.edit-translation:hover {
   background-color: #aaa;
+}
+
+.edit-translation .svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1rem;
+  height: 1rem;
+  fill: white;
 }
 
 .accept-cookie-overlay {

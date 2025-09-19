@@ -1,6 +1,7 @@
 SENSEI_ENV = {
   BUILD_STAGE: "prod",
-  FIREBASE_DB: "PRODUCTION",
+  FIREBASE_DB: "prod",
+  DEPLOYMENT: "prod",
   SERVER_HOST: "/api",
   WS_SCHEDULER_URL: "wss://ai-sensei.com/ws",
   ENABLE_LIVE_MODE: "true",

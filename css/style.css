@@ -1263,11 +1263,6 @@ input.form-control-file {
   z-index: 2000000002;
 }
 
-.delete-button {
-  padding: 0.1rem 0 0 0;
-  border-radius: 0.3rem;
-}
-
 .disabled {
   cursor: not-allowed !important;
 }

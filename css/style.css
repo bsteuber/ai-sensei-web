@@ -164,7 +164,6 @@
 
 .svg-icon {
   height: 1.2em;
-  vertical-align: -.175em;
   aspect-ratio: 1;
   fill: currentColor;
 }
@@ -182,9 +181,10 @@
   stroke-width: 0.7;
 }
 
+/*
 .svg-icon-cu-go-board-list {
   height: 34px;
-}
+} */
 
 .svg-icon.svg-icon-ma {
   height: 1.5em;
@@ -1715,6 +1715,20 @@ play-ai-game-row {
   color: var(--mistake-color);
 }
 
+
+.library-button-group .btn {
+  height: 1.6lh;
+}
+
+.library-button-group select {
+  background-color: var(--nav-bg);
+  color: white;
+  border: none;
+  padding-block: 0;
+  padding-inline: 1em;
+  height: 1.6lh;
+}
+
 .bulk-add-problems-icon,
 .delete-game-problems-icon {
   margin: 0.1rem 0.5rem 0 -0.3rem;
@@ -1740,20 +1754,20 @@ play-ai-game-row {
   height: 34px;
 }
 
-.svg-icon.svg-icon-cu-to-end-of-game,
-.svg-icon.svg-icon-cu-rewind-to-start {
+.controls .svg-icon.svg-icon-cu-to-end-of-game,
+.controls .svg-icon.svg-icon-cu-rewind-to-start {
   height: 66px;
   margin: -0.9rem 0 -0.8rem;
 }
 
-.svg-icon.svg-icon-cu-next-mistake,
-.svg-icon.svg-icon-cu-previous-mistake {
+.controls .svg-icon.svg-icon-cu-next-mistake,
+.controls .svg-icon.svg-icon-cu-previous-mistake {
   height: 56px;
   margin: -0.5rem 0 -0.5rem;
 }
 
-.svg-icon.svg-icon-cu-next-move,
-.svg-icon.svg-icon-cu-previous-move {
+.controls .svg-icon.svg-icon-cu-next-move,
+.controls .svg-icon.svg-icon-cu-previous-move {
   height: 56px;
   margin: -0.5rem 0 -0.5rem;
 }

@@ -1965,6 +1965,10 @@ play-ai-game-row {
   margin-bottom: 2rem;
 }
 
+.dashboard-page .news-list {
+  margin-bottom: 0;
+}
+
 .news-title {
   color: var(--card-fg);
   font-size: 1.6rem;

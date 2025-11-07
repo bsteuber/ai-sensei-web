@@ -601,6 +601,10 @@ They are consistent to bootstrap at 16px font size.
   background: linear-gradient(to bottom, transparent, var(--card-bg) 60%);
 }
 
+.dashboard-page .news-list .news-content:not(.expanded) .news-article-fade-out {
+  background: linear-gradient(to bottom, transparent, white 100%);
+}
+
 .news-read-more-btn,
 .discuss-read-more-btn {
   display: none;
@@ -612,6 +616,24 @@ They are consistent to bootstrap at 16px font size.
   position: absolute;
   inset: 22em 0 0;
   background-color: var(--card-bg);
+}
+
+.dashboard-widget {
+  margin: 0 1rem 2rem;
+  filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.2));
+}
+
+.dashboard-page .news-content:not(.expanded) .news-read-more-btn {
+  background-color: var(--page-bg);
+}
+
+.dashboard-page .player-name,
+.dashboard-page .player-rank {
+  font-size: 1rem !important;
+}
+
+.dashboard-page .ranked-overview-info.font-larger {
+  font-size: 1rem !important;
 }
 
 .server-side-rendered lite-youtube {

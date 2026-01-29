@@ -733,6 +733,7 @@
     "plan-variation-depth-free": "平均で4手先まで分析します",
     "plan-variation-depth-pro": "平均で18手先まで分析します",
     "plan-variation-depth-standard": "平均で15手先まで分析します",
+    "play-again": "もう一度対局",
     "play-ai-from-position": "この局面からAIと対局",
     "play-ai-from-position-tooltip": "この局面からAIと対局する",
     "play-ai-quota-exceeded": "AIの一手をご利用頂きありがとうございます。残念ながら、本日無料でお使い頂ける範囲を超えてしまいました。明日までお待ち頂くか、アカウントのアップグレードをお願いいたします。",

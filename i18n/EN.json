@@ -725,6 +725,7 @@
     "plan-variation-depth-free": "4 moves long variations on average",
     "plan-variation-depth-pro": "18 moves long variations on average",
     "plan-variation-depth-standard": "15 moves long variations on average",
+    "play-again": "Play again",
     "play-ai-from-position": "Play AI from this position",
     "play-ai-from-position-tooltip": "Play from this starting position against a bot of your choice.",
     "play-ai-quota-exceeded": "Your daily quota has been used up. You can play again tomorrow or upgrade your account.",

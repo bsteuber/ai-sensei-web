@@ -1,0 +1,22 @@
+/* Typography */
+
+body {
+    font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", sans-serif;
+}
+
+/* Navigation */
+
+.logo-icon {
+    width: 4rem;
+    height: 4rem;
+    margin: -0.3rem;
+}
+
+.my-nav .nav-row-label {
+    font-size: 1.3rem !important;
+}
+
+.btn-signup {
+    letter-spacing: -0.2em;
+    padding-left: 0.6em;
+}

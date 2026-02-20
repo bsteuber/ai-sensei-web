@@ -339,6 +339,17 @@ They are consistent to bootstrap at 16px font size.
     height: 100vh;
     overflow-y: auto;
   }
+
+  /* Game views use their own inner scroll containers (e.g. sidebar). Keep
+     the outer content pane fixed to avoid a second scrollbar flickering. */
+  .page-layout-content.game-page,
+  .page-layout-content.play-ai-game-page,
+  .page-layout-content.training-page,
+  .page-layout-content.game-record-page,
+  .page-layout-content.challenge-page,
+  .page-layout-content.learn-go-page {
+    overflow-y: hidden;
+  }
 }
 
 .nav-footer {

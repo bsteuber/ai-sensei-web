@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://baduk-ai.com/sitemap.xml

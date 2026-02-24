@@ -598,6 +598,20 @@ They are consistent to bootstrap at 16px font size.
   position: relative;
 }
 
+.news-content h2 {
+  font-size: calc(1.275rem + .3vw);
+}
+
+@media (min-width: 1200px) {
+  .news-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.news-content h3 {
+  font-size: 1.25rem;
+}
+
 .news-list .news-content:not(.expanded),
 .discuss .discuss-post-content:not(.expanded) {
   max-height: 25em;

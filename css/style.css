@@ -2697,10 +2697,10 @@ circle.ownership.diff.white {
   fill: var(--blunder-on-white);
 }
 
-g.lines line {
+g.lines line,
+g.lines path {
   stroke: black;
   vector-effect: non-scaling-stroke;
-  shape-rendering: crispEdges;
 }
 
 g.touch-cross line {

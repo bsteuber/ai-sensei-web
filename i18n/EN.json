@@ -322,7 +322,7 @@
     "include-all-games": "Include all",
     "invalid-email-msg": "Please enter a valid email address.",
     "invalid-voucher-code": "The voucher code was invalid.",
-    "ios-subscribe-website-msg": "To manage your subscription, please visit our website in a browser: \n\n**https://ai-sensei.com**",
+    "ios-pricing-subscription-notice": "Subscriptions can't be purchased in this app.\n\nSign in with an existing account to access your subscription.",
     "its-your-turn": "It's your turn",
     "katago-supports-only-board-sizes-7-to-19": "KataGo only supports board sizes from 7x7 to 19x19.",
     "keep-playing": "Keep Playing",

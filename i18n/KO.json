@@ -322,7 +322,7 @@
     "include-all-games": "전체 포함",
     "invalid-email-msg": "유효한 이메일 주소를 입력해 주세요.",
     "invalid-voucher-code": "바우처 코드가 유효하지 않습니다.",
-    "ios-subscribe-website-msg": "구독을 관리하려면 브라우저에서 웹사이트를 방문해 주세요:\n\n**https://baduk-ai.com**",
+    "ios-pricing-subscription-notice": "이 앱에서는 구독을 구매할 수 없습니다.\n\n기존 계정으로 로그인하면 구독을 이용할 수 있습니다.",
     "its-your-turn": "당신의 차례입니다",
     "katago-supports-only-board-sizes-7-to-19": "KataGo는 7x7부터 19x19까지의 판 크기만 지원합니다.",
     "keep-playing": "계속 두기",

@@ -322,7 +322,7 @@
     "include-all-games": "すべて選択",
     "invalid-email-msg": "有効なメールアドレスを入力してください",
     "invalid-voucher-code": "クーポンコードが無効です",
-    "ios-subscribe-website-msg": "ご契約内容の管理は、ブラウザで当社のウェブサイトにアクセスしてください：\n\n**https://ai-no-itte.jp**",
+    "ios-pricing-subscription-notice": "このアプリではサブスクリプションを購入できません。\n\n既存のアカウントでサインインすると、サブスクリプションをご利用いただけます。",
     "its-your-turn": "あなたの手番です",
     "katago-supports-only-board-sizes-7-to-19": "KataGoは 7路盤から19路盤のみを対応しています",
     "keep-playing": "続けてプレイ",
